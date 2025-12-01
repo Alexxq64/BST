@@ -189,34 +189,31 @@ void OutputUtils::printTreeProperties(TreeNode* root, const std::string& treeNam
  * Форматирует и выводит заголовок для таблицы 1 из задания лабораторной работы.
  * Столбцы выравниваются для удобства чтения.
  */
-void OutputUtils::printTableHeader() {
-    std::cout << std::string(100, '=') << std::endl;
-    std::cout << "ТАБЛИЦА 1 - РЕЗУЛЬТАТЫ РАБОТЫ ПРОГРАММ" << std::endl;
-    std::cout << std::string(100, '=') << std::endl;
+void OutputUtils::printTableHeader(
+    const std::string& leftGroup,
+    const std::string& rightGroup)
+{
 
-    // Заголовок согласно заданию
+    // ==== ГРУППЫ ====
     std::cout << std::setw(9) << "Размер" << std::setw(6) << " | ";
 
-    // СДП
-    std::cout << std::setw(22) << "СДП" << std::setw(21) << " | ";
+    std::cout << std::setw(22) << leftGroup
+        << std::setw(21) << " | "
+        << std::setw(22) << rightGroup
+        << std::setw(21) << std::endl;
 
-    // ИСДП
-    std::cout << std::setw(22) << "ИСДП" << std::setw(21) << std::endl;
-
-    // Подзаголовки
+    // ==== Подзаголовки 1 ====
     std::cout << std::setw(12) << " " << " | ";
 
-    // СДП подзаголовки
     std::cout << std::setw(10) << "Контр."
         << std::setw(12) << "Высота"
-        << std::setw(18) << "Теор.   " << " | ";
+        << std::setw(18) << "Теор." << " | ";
 
-    // ИСДП подзаголовки  
     std::cout << std::setw(10) << "Контр."
         << std::setw(12) << "Высота"
-        << std::setw(18) << "Теор.   " << std::endl;
+        << std::setw(18) << "Теор." << std::endl;
 
-    // Дополнительные подзаголовки
+    // ==== Подзаголовки 2 ====
     std::cout << std::setw(12) << " " << " | ";
 
     std::cout << std::setw(10) << "сумма"
@@ -229,6 +226,7 @@ void OutputUtils::printTableHeader() {
 
     std::cout << std::string(100, '-') << std::endl;
 }
+
 
 /**
  * @brief Вывод строки таблицы для одного размера дерева
@@ -285,3 +283,54 @@ void OutputUtils::printTheoreticalEstimates(const std::vector<int>& sizes) {
 
     std::cout << std::string(80, '=') << std::endl << std::endl;
 }
+
+
+
+
+void OutputUtils::printDBTableHeader() {
+    std::cout
+        << std::setw(6) << ""
+        << std::setw(30) << "АВЛ"
+        << std::setw(30) << "ДБД"
+        << std::endl;
+
+    std::cout << std::right
+        << std::setw(6) << ""
+        << std::setw(12) << "Контр."
+        << std::setw(8) << "Факт."
+        << std::setw(12) << "Теор. ср."
+        << std::setw(15) << "Контр."
+        << std::setw(10) << ""
+        << std::setw(9) << "Теор."
+        << std::setw(12) << "Теор. ср"
+        << std::endl;
+
+    std::cout << std::right
+        << std::setw(6) << "Размер"
+        << std::setw(12) << "сумма."
+        << std::setw(8) << "высота"
+        << std::setw(12) << "высота"
+        << std::setw(15) << "сумма."
+        << std::setw(10) << "Уровни"
+        << std::setw(9) << "высота"
+        << std::setw(12) << "высота"
+        << std::endl;
+
+    std::cout << std::string(108, '-') << std::endl;
+}
+
+void OutputUtils::printDBTableRow(int size,
+    int avlCheckSum, int avlHeight, double avlAvg,
+    int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo) {
+    std::cout << std::right
+        << std::setw(6) << size
+        << std::setw(12) << avlCheckSum
+        << std::setw(8) << avlHeight
+        << std::setw(12) << std::fixed << std::setprecision(2) << avlAvg
+        << std::setw(15) << dbCheckSum
+        << std::setw(10) << dbLevels
+        << std::setw(9) << dbHeightTheo
+        << std::setw(12) << dbAvgTheo
+        << std::endl;
+}
+

@@ -156,3 +156,18 @@ TreeNode* TreeProperties::searchNode(TreeNode* root, int key) {
 
     return nullptr;  // ”зел не найден
 }
+
+int TreeProperties::calculateCheckSumDB(DBNode* root) {
+    if (!root) return 0;
+    int sum = 0;
+    for (int key : root->keys) sum += key;
+    for (DBNode* child : root->children) sum += calculateCheckSumDB(child);
+    return sum;
+}
+
+int TreeProperties::calculateLevelsDB(DBNode* root, int level) {
+    if (!root) return 0;
+    int sum = level * root->keys.size();
+    for (DBNode* child : root->children) sum += calculateLevelsDB(child, level + 1);
+    return sum;
+}

@@ -2,6 +2,7 @@
 #define TREE_PROPERTIES_H
 
 #include "tree_node.h"
+#include "db_node.h"
 #include <vector>
 
 /**
@@ -71,6 +72,10 @@ public:
      *       Временная сложность: O(h), где h - высота дерева.
      */
     static TreeNode* searchNode(TreeNode* root, int key);
+
+    static int calculateCheckSumDB(DBNode* root);
+    static int calculateLevelsDB(DBNode* root, int level = 0);
+
 
 private:
     /**

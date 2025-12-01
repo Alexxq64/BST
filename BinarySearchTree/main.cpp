@@ -1,141 +1,55 @@
-﻿/**
- * @file main.cpp
- * @brief Главный файл программы для лабораторной работы по деревьям поиска
- *
- * Лабораторная работа 1: Идеально сбалансированное дерево поиска (ИСДП)
- * и случайное дерево поиска (СДП)
- */
-
-#include "testing.h"
-#include "data_generator.h"
-#include "tree_builders.h"
-#include "tree_properties.h"
-#include "output_utils.h"
-#include "theory_calculations.h"
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include "lab1.h"
+#include "lab2.h"
+#include "lab3.h"
+#include "tests.h"
 
- /**
-  * @brief Компактный вывод обхода дерева
-  */
-static void printCompactTraversal(const std::vector<int>& traversal) {
-    if (traversal.size() <= 15) {
-        for (int key : traversal) std::cout << key << " ";
-    }
-    else {
-        for (int i = 0; i < 5; i++) std::cout << traversal[i] << " ";
-        std::cout << "... ";
 
-        int step = traversal.size() / 6;
-        for (int i = 1; i <= 5; i++) {
-            std::cout << traversal[i * step] << " ";
-            if (i < 5) std::cout << "... ";
-        }
-        std::cout << "... ";
 
-        for (int i = traversal.size() - 5; i < traversal.size(); i++) {
-            std::cout << traversal[i] << " ";
-        }
-    }
-    std::cout << std::endl;
-}
-
-/**
- * @brief Сравнение характеристик ИСДП и СДП для различных размеров
- */
-static void compareTreeCharacteristics(const std::vector<int>& sizes) {
-    std::cout << "=== ВЫВОД ОБХОДОВ ДЕРЕВЬЕВ ===" << std::endl;
-
-    for (int size : sizes) {
-        std::vector<int> data = DataGenerator::generateUniqueNumbers(size, 1, size * 10);
-        std::vector<int> sortedData = data;
-        std::sort(sortedData.begin(), sortedData.end());
-
-        TreeNode* ibTree = TreeBuilders::buildPerfectlyBalancedTree(sortedData);
-        TreeNode* spTree = TreeBuilders::buildRandomSearchTree(data);
-
-        std::cout << "ИСДП " << size << ": ";
-        printCompactTraversal(TreeProperties::inOrderTraversal(ibTree));
-
-        std::cout << "СДП " << size << ": ";
-        printCompactTraversal(TreeProperties::inOrderTraversal(spTree));
-        std::cout << std::endl;
-
-        TreeBuilders::deleteTree(ibTree);
-        TreeBuilders::deleteTree(spTree);
-    }
-
-    std::cout << "=== СРАВНЕНИЕ ХАРАКТЕРИСТИК ===" << std::endl;
-    OutputUtils::printTableHeader();
-
-    for (int size : sizes) {
-        std::vector<int> data = DataGenerator::generateUniqueNumbers(size, 1, size * 10);
-        std::vector<int> sortedData = data;
-        std::sort(sortedData.begin(), sortedData.end());
-
-        TreeNode* ibTree = TreeBuilders::buildPerfectlyBalancedTree(sortedData);
-        TreeNode* spTree = TreeBuilders::buildRandomSearchTree(data);
-
-        int ibCheckSum = TreeProperties::calculateCheckSum(ibTree);
-        int ibHeight = TreeProperties::calculateHeight(ibTree);
-        double ibTheoreticalAvgHeight = TheoryCalculations::theoreticalAverageHeightBalanced(size);
-
-        int spCheckSum = TreeProperties::calculateCheckSum(spTree);
-        int spHeight = TreeProperties::calculateHeight(spTree);
-        double spTheoreticalAvgHeight = TheoryCalculations::theoreticalAverageHeightRandomBST(size);
-
-        OutputUtils::printTableRow(size,
-            spCheckSum, spHeight, spTheoreticalAvgHeight,
-            ibCheckSum, ibHeight, ibTheoreticalAvgHeight);
-
-        TreeBuilders::deleteTree(ibTree);
-        TreeBuilders::deleteTree(spTree);
-    }
-
-    std::cout << std::string(100, '=') << std::endl;
-    std::cout << "Сравнение завершено!" << std::endl << std::endl;
-}
-
-/**
- * @brief Основная функция программы
- */
 int main() {
     std::locale::global(std::locale(""));
     std::cout.imbue(std::locale());
 
-    std::cout << "==================================================" << std::endl;
-    std::cout << "ЛАБОРАТОРНАЯ РАБОТА 1" << std::endl;
-    std::cout << "Тема: Идеально сбалансированное дерево поиска (ИСДП)" << std::endl;
-    std::cout << "       и случайное дерево поиска (СДП)" << std::endl;
-    std::cout << "==================================================" << std::endl;
-    std::cout << std::endl;
+    while (true) {
+        std::cout << "==================================================\n";
+        std::cout << "                 � � � �   \n";
+        std::cout << "==================================================\n";
+        std::cout << "1. ������������ 1 (���� � ���)\n";
+        std::cout << "2. ������������ 2 (��� � ����)\n";
+        std::cout << "3. ������������ 3 (��� � ���)\n";
+        std::cout << "4. �����\n";
+        std::cout << "0. �����\n";
+        std::cout << "--------------------------------------------------\n";
+        std::cout << "��� �����: ";
 
-    try {
-        // Демонстрация построения деревьев
-        std::cout << "ЭТАП 1: ДЕМОНСТРАЦИЯ ПОСТРОЕНИЯ ДЕРЕВЬЕВ" << std::endl;
-        std::cout << "==================================================" << std::endl;
-        Testing::demonstrateBalancedTree();
-        Testing::demonstrateRandomTree();
+        int choice;
+        std::cin >> choice;
 
-        // Основной эксперимент
-        std::cout << "ЭТАП 2: ОСНОВНОЙ ЭКСПЕРИМЕНТ" << std::endl;
-        std::cout << "==================================================" << std::endl;
-        std::cout << "Построение и сравнение ИСДП и СДП для размеров: 100, 200, 300, 400, 500" << std::endl;
-        std::cout << std::endl;
+        switch (choice) {
+        case 1:
+            runLab1();
+            break;
 
-        std::vector<int> sizes = { 100, 200, 300, 400, 500 };
-        compareTreeCharacteristics(sizes);
+        case 2:
+            runLab2();
+            break;
+
+        case 3:
+            runLab3();
+            break;
+
+        case 4:
+            runTests();
+            break;
+
+        case 0:
+            return 0;
+
+        default:
+            std::cout << "������������ �����!\n";
+        }
 
     }
-    catch (const std::exception& e) {
-        std::cerr << "ОШИБКА: " << e.what() << std::endl;
-        return 1;
-    }
-
-    std::cout << "==================================================" << std::endl;
-    std::cout << "ЛАБОРАТОРНАЯ РАБОТА ЗАВЕРШЕНА!" << std::endl;
-    std::cout << "==================================================" << std::endl;
 
     return 0;
 }

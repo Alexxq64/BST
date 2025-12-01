@@ -64,6 +64,10 @@ public:
      * @return ln(x)
      */
     static double ln(double x);
+
+    static int theoreticalDBHeight(int n, int t);
+
+
 };
 
 #endif // THEORY_CALCULATIONS_H

@@ -57,7 +57,10 @@ public:
      *
      * ¬ыводит форматированный заголовок дл€ таблицы 1 из задани€
      */
-    static void printTableHeader();
+    static void printTableHeader(
+        const std::string& leftGroup,
+        const std::string& rightGroup
+    );
 
     /**
      * @brief ¬ывод строки таблицы дл€ одного размера дерева
@@ -80,6 +83,14 @@ public:
      * ¬ыводит таблицу с теоретическими оценками дл€ сравнени€ с практическими результатами
      */
     static void printTheoreticalEstimates(const std::vector<int>& sizes);
+
+    static void printDBTableHeader();
+
+    static void printDBTableRow(int size,
+        int avlCheckSum, int avlHeight, double avlAvg,
+        int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo);
+
+
 
 private:
     /**

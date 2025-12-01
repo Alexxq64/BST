@@ -69,3 +69,9 @@ double TheoryCalculations::ln(double x) {
     if (x <= 0.0) return 0.0;
     return std::log(x);
 }
+
+
+int TheoryCalculations::theoreticalDBHeight(int n, int t) {
+    if (n == 0) return 0;
+    return std::ceil(std::log(n + 1) / std::log(t));
+}
