@@ -289,16 +289,16 @@ void OutputUtils::printTheoreticalEstimates(const std::vector<int>& sizes) {
 
 void OutputUtils::printDBTableHeader() {
     std::cout
-        << std::setw(6) << ""
-        << std::setw(30) << "АВЛ"
+        << std::setw(6) << "" << " | "
+        << std::setw(32) << "АВЛ              " << " | "
         << std::setw(30) << "ДБД"
         << std::endl;
 
     std::cout << std::right
-        << std::setw(6) << ""
+        << std::setw(6) << "" << " | "
         << std::setw(12) << "Контр."
         << std::setw(8) << "Факт."
-        << std::setw(12) << "Теор. ср."
+        << std::setw(12) << "Теор. ср." << " | "
         << std::setw(15) << "Контр."
         << std::setw(10) << ""
         << std::setw(9) << "Теор."
@@ -306,27 +306,27 @@ void OutputUtils::printDBTableHeader() {
         << std::endl;
 
     std::cout << std::right
-        << std::setw(6) << "Размер"
+        << std::setw(6) << "Размер" << " | "
         << std::setw(12) << "сумма."
         << std::setw(8) << "высота"
-        << std::setw(12) << "высота"
+        << std::setw(12) << "высота" << " | "
         << std::setw(15) << "сумма."
         << std::setw(10) << "Уровни"
         << std::setw(9) << "высота"
         << std::setw(12) << "высота"
         << std::endl;
 
-    std::cout << std::string(108, '-') << std::endl;
+    std::cout << std::string(90, '-') << std::endl;
 }
 
 void OutputUtils::printDBTableRow(int size,
     int avlCheckSum, int avlHeight, double avlAvg,
     int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo) {
     std::cout << std::right
-        << std::setw(6) << size
+        << std::setw(6) << size << " | "
         << std::setw(12) << avlCheckSum
         << std::setw(8) << avlHeight
-        << std::setw(12) << std::fixed << std::setprecision(2) << avlAvg
+        << std::setw(12) << std::fixed << std::setprecision(2) << avlAvg << " | "
         << std::setw(15) << dbCheckSum
         << std::setw(10) << dbLevels
         << std::setw(9) << dbHeightTheo

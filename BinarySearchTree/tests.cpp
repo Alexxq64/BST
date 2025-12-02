@@ -7,6 +7,9 @@ void runTests() {
 
     Testing::demonstrateBalancedTree();
     Testing::demonstrateRandomTree();
+    Testing::demonstrateAVLTree();
+    Testing::demonstrateDBTree();
+   
 
     std::cout << "=== ÒÅÑÒÛ ÇÀÂÅÐØÅÍÛ ===" << std::endl << std::endl;
 }

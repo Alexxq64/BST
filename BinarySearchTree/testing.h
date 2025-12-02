@@ -33,6 +33,9 @@ public:
      * - Высоту и размер
      */
     static void demonstrateRandomTree();
+    static void demonstrateAVLTree();
+    static void demonstrateDBTree();
+
 
 private:
     /**

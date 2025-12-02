@@ -1,5 +1,6 @@
 ﻿#include "theory_calculations.h"
 #include <cmath>
+#include <algorithm>
 
 /**
  * @file theory_calculations.cpp
@@ -73,5 +74,10 @@ double TheoryCalculations::ln(double x) {
 
 int TheoryCalculations::theoreticalDBHeight(int n, int t) {
     if (n == 0) return 0;
-    return std::ceil(std::log(n + 1) / std::log(t));
+
+    // Минимальное количество ключей на узел (кроме корня)
+    int minKeysPerNode = std::max(2, (int)std::ceil(t / 2.0));
+
+    // Корректная формула теоретической высоты B-дерева
+    return (int)std::ceil(std::log(static_cast<double>(n)) / std::log(static_cast<double>(minKeysPerNode)));
 }

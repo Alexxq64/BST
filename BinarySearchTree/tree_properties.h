@@ -75,6 +75,16 @@ public:
 
     static int calculateCheckSumDB(DBNode* root);
     static int calculateLevelsDB(DBNode* root, int level = 0);
+    static int calculateHeightDB(const DBNode* node);
+
+    /**
+     * @brief Поиск ключа в ДБД-дереве
+     * @param root Корень ДБД-дерева
+     * @param key Ключ для поиска
+     * @return Указатель на узел, содержащий ключ, или nullptr, если не найден
+     */
+    static DBNode* searchNodeDB(DBNode* root, int key);
+
 
 
 private:

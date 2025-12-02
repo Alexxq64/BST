@@ -171,3 +171,42 @@ int TreeProperties::calculateLevelsDB(DBNode* root, int level) {
     for (DBNode* child : root->children) sum += calculateLevelsDB(child, level + 1);
     return sum;
 }
+
+int TreeProperties::calculateHeightDB(const DBNode* node) {
+    if (!node) return 0;
+
+    // Лист — высота 1
+    if (node->isLeaf) return 1;
+
+    int maxChildHeight = 0;
+    for (DBNode* child : node->children) {
+        maxChildHeight = std::max(maxChildHeight, calculateHeightDB(child));
+    }
+
+    return 1 + maxChildHeight;
+}
+
+/**
+ * @brief Поиск ключа в ДБД-дереве
+ * @param root Корень ДБД-дерева
+ * @param key Ключ для поиска
+ * @return Указатель на узел, содержащий ключ, или nullptr, если не найден
+ */
+DBNode* TreeProperties::searchNodeDB(DBNode* root, int key) {
+    if (!root) return nullptr;
+
+    // Проверяем ключи текущего узла
+    for (int k : root->keys) {
+        if (k == key) return root;
+    }
+
+    // Рекурсивно обходим детей
+    for (DBNode* child : root->children) {
+        DBNode* found = searchNodeDB(child, key);
+        if (found) return found;
+    }
+
+    return nullptr;
+}
+
+

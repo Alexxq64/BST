@@ -64,19 +64,19 @@ static void compareDBDCharacteristics(const std::vector<int>& sizes) {
         double avlAvg = TheoryCalculations::theoreticalAverageHeightBalanced(size);
 
         int dbCheckSum = TreeProperties::calculateCheckSumDB(dbTree);
-        int dbLevels = TreeProperties::calculateLevelsDB(dbTree);
+        int dbHeight = TreeProperties::calculateHeightDB(dbTree);
         double dbHeightTheo = TheoryCalculations::theoreticalDBHeight(size, 2); // передаем t
         double dbAvgTheo = TheoryCalculations::theoreticalAverageHeightBalanced(size);
 
         // Выводим минимально: size и уровни (остальное можно расширить позже)
         OutputUtils::printDBTableRow(size,
             avlCheckSum, avlHeight, avlAvg,
-            dbCheckSum, dbLevels, dbHeightTheo, dbAvgTheo);
+            dbCheckSum, dbHeight, dbHeightTheo, dbAvgTheo);
         TreeBuilders::deleteTree(avlTree);
         TreeBuilders::deleteDBTree(dbTree);
     }
 
-    std::cout << std::string(100, '=') << std::endl;
+    std::cout << std::string(90, '=') << std::endl;
 }
 
 void runLab3() {
