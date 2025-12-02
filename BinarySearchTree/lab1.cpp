@@ -1,3 +1,8 @@
+/**
+ * @file lab1.cpp
+ * @brief Реализация лабораторной работы №1: сравнение ИСДП и СДП
+ */
+
 #include "lab1.h"
 #include "data_generator.h"
 #include "tree_builders.h"
@@ -10,6 +15,10 @@
 #include <vector>
 #include <algorithm>
 
+ /**
+  * @brief Компактный вывод обхода дерева
+  * @param traversal Вектор ключей для вывода
+  */
 static void printCompactTraversal(const std::vector<int>& traversal) {
     if (traversal.size() <= 15) {
         for (int key : traversal) std::cout << key << " ";
@@ -32,6 +41,10 @@ static void printCompactTraversal(const std::vector<int>& traversal) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief Сравнение характеристик ИСДП и СДП
+ * @param sizes Вектор размеров деревьев для анализа
+ */
 static void compareTreeCharacteristics(const std::vector<int>& sizes) {
     std::cout << "=== ВЫВОД ОБХОДОВ ДЕРЕВЬЕВ ===" << std::endl;
 
@@ -84,6 +97,9 @@ static void compareTreeCharacteristics(const std::vector<int>& sizes) {
     std::cout << std::string(100, '=') << std::endl;
 }
 
+/**
+ * @brief Основная функция лабораторной работы 1
+ */
 void runLab1() {
     std::cout << "==================================================" << std::endl;
     std::cout << "ЛАБОРАТОРНАЯ РАБОТА 1" << std::endl;
@@ -97,5 +113,4 @@ void runLab1() {
 
     std::vector<int> sizes = { 100, 200, 300, 400, 500 };
     compareTreeCharacteristics(sizes);
-
 }

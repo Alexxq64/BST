@@ -1,9 +1,3 @@
-#ifndef TESTING_H
-#define TESTING_H
-
-#include "tree_node.h"
-#include <vector>
-
 /**
  * @file testing.h
  * @brief Функции демонстрации работы алгоритмов построения деревьев
@@ -11,6 +5,12 @@
  * Этот файл содержит функции для демонстрации построения ИСДП и СДП
  * и проверки их базовых свойств.
  */
+
+#ifndef TESTING_H
+#define TESTING_H
+
+#include "tree_node.h"
+#include <vector>
 
 class Testing {
 public:
@@ -33,14 +33,34 @@ public:
      * - Высоту и размер
      */
     static void demonstrateRandomTree();
-    static void demonstrateAVLTree();
-    static void demonstrateDBTree();
 
+    /**
+     * @brief Демонстрация построения АВЛ-дерева
+     *
+     * Показывает пошаговое построение АВЛ-дерева с балансировкой.
+     * Демонстрирует изменения высоты и размера после каждой вставки.
+     */
+    static void demonstrateAVLTree();
+
+    /**
+     * @brief Демонстрация построения B-дерева (ДБД)
+     *
+     * Строит двоичное B-дерево с минимальной степенью t=2.
+     * Показывает in-order обход и проверяет свойства B-дерева.
+     */
+    static void demonstrateDBTree();
 
 private:
     /**
      * @brief Создание тестового дерева для демонстрации
      * @return Указатель на корень тестового дерева
+     *
+     * Создает дерево с фиксированной структурой:
+     *         5
+     *        / \
+     *       3   8
+     *      / \   \
+     *     1   4   9
      */
     static TreeNode* createTestTree();
 };

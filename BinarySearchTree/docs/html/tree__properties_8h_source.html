@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторные работы по деревьям поиска: Исходный файл tree_properties.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторные работы по деревьям поиска
+   </div>
+   <div id="projectbrief">ИСДП, СДП, АВЛ и B-деревья</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('tree__properties_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">tree_properties.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="tree__properties_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TREE_PROPERTIES_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TREE_PROPERTIES_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="tree__node_8h.html">tree_node.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="db__node_8h.html">db_node.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_tree_properties.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tree_properties.html">TreeProperties</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#a500c608c4f864442f9b1327d9b75eae4">calculateSize</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#abf96c0593f0fc749f3b610a8747d75b2">calculateHeight</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#a58da077b8fc393534e92205b8a190255">calculateCheckSum</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_tree_properties.html#af60d52bcb3526449d788279e283be667">calculateAverageHeight</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">static</span> std::vector&lt;int&gt; <a class="code hl_function" href="class_tree_properties.html#a2788041ab64c9d4f9d299b7830958170">inOrderTraversal</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* <a class="code hl_function" href="class_tree_properties.html#ab2762bb415141ece8d5d9ab78cac8192">searchNode</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* root, <span class="keywordtype">int</span> key);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#a0abd15a75e6cf692339b450ef8f38c3c">calculateCheckSumDB</a>(<a class="code hl_struct" href="struct_d_b_node.html">DBNode</a>* root);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#aba4f318515ba7f4b9a972d06a707109f">calculateLevelsDB</a>(<a class="code hl_struct" href="struct_d_b_node.html">DBNode</a>* root, <span class="keywordtype">int</span> level = 0);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_tree_properties.html#a2b1fa0e39c81a3324c7205a4117fdc81">calculateHeightDB</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_d_b_node.html">DBNode</a>* node);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_d_b_node.html">DBNode</a>* <a class="code hl_function" href="class_tree_properties.html#a59b985806a2bd54481f3cf2fe7fd18b0">searchNodeDB</a>(<a class="code hl_struct" href="struct_d_b_node.html">DBNode</a>* root, <span class="keywordtype">int</span> key);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tree_properties.html#a0e8fc74492d58ed192ec9d149836dd30">calculateAverageHeightRecursive</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* node, <span class="keywordtype">int</span> currentHeight,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">double</span>&amp; totalHeight, <span class="keywordtype">int</span>&amp; leafCount);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tree_properties.html#a940ad5f74bade9920215ed49c8710d9d">inOrderRecursive</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* node, std::vector&lt;int&gt;&amp; result);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>};</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#endif </span><span class="comment">// TREE_PROPERTIES_H</span></div>
+<div class="ttc" id="aclass_tree_properties_html"><div class="ttname"><a href="class_tree_properties.html">TreeProperties</a></div><div class="ttdef"><b>Определения</b> tree_properties.h:16</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a0abd15a75e6cf692339b450ef8f38c3c"><div class="ttname"><a href="class_tree_properties.html#a0abd15a75e6cf692339b450ef8f38c3c">TreeProperties::calculateCheckSumDB</a></div><div class="ttdeci">static int calculateCheckSumDB(DBNode *root)</div><div class="ttdoc">Вычисление контрольной суммы B-дерева (ДБД).</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:173</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a0e8fc74492d58ed192ec9d149836dd30"><div class="ttname"><a href="class_tree_properties.html#a0e8fc74492d58ed192ec9d149836dd30">TreeProperties::calculateAverageHeightRecursive</a></div><div class="ttdeci">static void calculateAverageHeightRecursive(TreeNode *node, int currentHeight, double &amp;totalHeight, int &amp;leafCount)</div><div class="ttdoc">Вспомогательная функция для вычисления средней высоты</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:84</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a2788041ab64c9d4f9d299b7830958170"><div class="ttname"><a href="class_tree_properties.html#a2788041ab64c9d4f9d299b7830958170">TreeProperties::inOrderTraversal</a></div><div class="ttdeci">static std::vector&lt; int &gt; inOrderTraversal(TreeNode *root)</div><div class="ttdoc">Обход дерева слева направо (in-order traversal).</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:108</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a2b1fa0e39c81a3324c7205a4117fdc81"><div class="ttname"><a href="class_tree_properties.html#a2b1fa0e39c81a3324c7205a4117fdc81">TreeProperties::calculateHeightDB</a></div><div class="ttdeci">static int calculateHeightDB(const DBNode *node)</div><div class="ttdoc">Вычисление высоты B-дерева (ДБД).</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:212</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a500c608c4f864442f9b1327d9b75eae4"><div class="ttname"><a href="class_tree_properties.html#a500c608c4f864442f9b1327d9b75eae4">TreeProperties::calculateSize</a></div><div class="ttdeci">static int calculateSize(TreeNode *root)</div><div class="ttdoc">Вычисление размера дерева (количество узлов).</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:16</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a58da077b8fc393534e92205b8a190255"><div class="ttname"><a href="class_tree_properties.html#a58da077b8fc393534e92205b8a190255">TreeProperties::calculateCheckSum</a></div><div class="ttdeci">static int calculateCheckSum(TreeNode *root)</div><div class="ttdoc">Вычисление контрольной суммы данных дерева</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:47</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a59b985806a2bd54481f3cf2fe7fd18b0"><div class="ttname"><a href="class_tree_properties.html#a59b985806a2bd54481f3cf2fe7fd18b0">TreeProperties::searchNodeDB</a></div><div class="ttdeci">static DBNode * searchNodeDB(DBNode *root, int key)</div><div class="ttdoc">Поиск ключа в B-дереве (ДБД).</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:242</div></div>
+<div class="ttc" id="aclass_tree_properties_html_a940ad5f74bade9920215ed49c8710d9d"><div class="ttname"><a href="class_tree_properties.html#a940ad5f74bade9920215ed49c8710d9d">TreeProperties::inOrderRecursive</a></div><div class="ttdeci">static void inOrderRecursive(TreeNode *node, std::vector&lt; int &gt; &amp;result)</div><div class="ttdoc">Вспомогательная функция для in-order обхода</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:122</div></div>
+<div class="ttc" id="aclass_tree_properties_html_ab2762bb415141ece8d5d9ab78cac8192"><div class="ttname"><a href="class_tree_properties.html#ab2762bb415141ece8d5d9ab78cac8192">TreeProperties::searchNode</a></div><div class="ttdeci">static TreeNode * searchNode(TreeNode *root, int key)</div><div class="ttdoc">Поиск узла с заданным ключом в дереве поиска</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:142</div></div>
+<div class="ttc" id="aclass_tree_properties_html_aba4f318515ba7f4b9a972d06a707109f"><div class="ttname"><a href="class_tree_properties.html#aba4f318515ba7f4b9a972d06a707109f">TreeProperties::calculateLevelsDB</a></div><div class="ttdeci">static int calculateLevelsDB(DBNode *root, int level=0)</div><div class="ttdoc">Вычисление взвешенной суммы уровней B-дерева</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:193</div></div>
+<div class="ttc" id="aclass_tree_properties_html_abf96c0593f0fc749f3b610a8747d75b2"><div class="ttname"><a href="class_tree_properties.html#abf96c0593f0fc749f3b610a8747d75b2">TreeProperties::calculateHeight</a></div><div class="ttdeci">static int calculateHeight(TreeNode *root)</div><div class="ttdoc">Вычисление высоты дерева</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:30</div></div>
+<div class="ttc" id="aclass_tree_properties_html_af60d52bcb3526449d788279e283be667"><div class="ttname"><a href="class_tree_properties.html#af60d52bcb3526449d788279e283be667">TreeProperties::calculateAverageHeight</a></div><div class="ttdeci">static double calculateAverageHeight(TreeNode *root)</div><div class="ttdoc">Вычисление средней высоты дерева</div><div class="ttdef"><b>Определения</b> tree_properties.cpp:61</div></div>
+<div class="ttc" id="adb__node_8h_html"><div class="ttname"><a href="db__node_8h.html">db_node.h</a></div><div class="ttdoc">Определение структуры узла для Двоичного Б-дерева поиска (ДБД).</div></div>
+<div class="ttc" id="astruct_d_b_node_html"><div class="ttname"><a href="struct_d_b_node.html">DBNode</a></div><div class="ttdef"><b>Определения</b> db_node.h:14</div></div>
+<div class="ttc" id="astruct_tree_node_html"><div class="ttname"><a href="struct_tree_node.html">TreeNode</a></div><div class="ttdef"><b>Определения</b> tree_node.h:13</div></div>
+<div class="ttc" id="atree__node_8h_html"><div class="ttname"><a href="tree__node_8h.html">tree_node.h</a></div><div class="ttdoc">Узел бинарного дерева / АВЛ-дерева</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="tree__properties_8h.html">tree_properties.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

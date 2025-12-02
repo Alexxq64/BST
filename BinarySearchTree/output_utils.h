@@ -1,10 +1,3 @@
-#ifndef OUTPUT_UTILS_H
-#define OUTPUT_UTILS_H
-
-#include "tree_node.h"
-#include <vector>
-#include <string>
-
 /**
  * @file output_utils.h
  * @brief Утилиты для вывода данных и форматирования результатов
@@ -12,6 +5,13 @@
  * Этот файл содержит функции для красивого вывода деревьев,
  * таблиц результатов и других данных.
  */
+
+#ifndef OUTPUT_UTILS_H
+#define OUTPUT_UTILS_H
+
+#include "tree_node.h"
+#include <vector>
+#include <string>
 
 class OutputUtils {
 public:
@@ -34,13 +34,13 @@ public:
     static void printInOrder(TreeNode* root, const std::string& title = "In-order обход:");
 
     /**
- * @brief Вывод in-order обхода дерева с репрезентативной выборкой
- * @param root Указатель на корень дерева
- * @param title Заголовок для вывода
- *
- * Выводит первые 5 элементов, 5 элементов из середины (разделенных через ...)
- * и последние 5 элементов для больших деревьев.
- */
+     * @brief Вывод in-order обхода дерева с репрезентативной выборкой
+     * @param root Указатель на корень дерева
+     * @param title Заголовок для вывода
+     *
+     * Выводит первые 5 элементов, 5 элементов из середины (разделенных через ...)
+     * и последние 5 элементов для больших деревьев.
+     */
     static void printInOrderSampled(TreeNode* root, const std::string& title = "In-order обход:");
 
     /**
@@ -54,6 +54,8 @@ public:
 
     /**
      * @brief Вывод заголовка таблицы результатов
+     * @param leftGroup Название левой группы деревьев (например, "СДП")
+     * @param rightGroup Название правой группы деревьев (например, "ИСДП")
      *
      * Выводит форматированный заголовок для таблицы 1 из задания
      */
@@ -84,13 +86,28 @@ public:
      */
     static void printTheoreticalEstimates(const std::vector<int>& sizes);
 
+    /**
+     * @brief Вывод заголовка таблицы для сравнения АВЛ и ДБД
+     *
+     * Выводит форматированный заголовок таблицы для лабораторной работы 3.
+     * Таблица содержит сравнение характеристик АВЛ-деревьев и B-деревьев.
+     */
     static void printDBTableHeader();
 
+    /**
+     * @brief Вывод строки таблицы для сравнения АВЛ и ДБД
+     * @param size Размер дерева (количество элементов)
+     * @param avlCheckSum Контрольная сумма АВЛ-дерева
+     * @param avlHeight Фактическая высота АВЛ-дерева
+     * @param avlAvg Теоретическая средняя высота АВЛ-дерева
+     * @param dbCheckSum Контрольная сумма B-дерева
+     * @param dbLevels Фактическое количество уровней B-дерева
+     * @param dbHeightTheo Теоретическая высота B-дерева
+     * @param dbAvgTheo Теоретическая средняя высота B-дерева
+     */
     static void printDBTableRow(int size,
         int avlCheckSum, int avlHeight, double avlAvg,
         int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo);
-
-
 
 private:
     /**

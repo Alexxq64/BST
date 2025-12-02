@@ -1,3 +1,8 @@
+п»ї/**
+ * @file lab3.cpp
+ * @brief Р РµР°Р»РёР·Р°С†РёСЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕР№ СЂР°Р±РѕС‚С‹ в„–3: СЃСЂР°РІРЅРµРЅРёРµ РђР’Р›-РґРµСЂРµРІСЊРµРІ Рё B-РґРµСЂРµРІСЊРµРІ
+ */
+
 #include "lab3.h"
 #include "db_node.h"
 #include "data_generator.h"
@@ -11,6 +16,10 @@
 #include <vector>
 #include <algorithm>
 
+ /**
+  * @brief РљРѕРјРїР°РєС‚РЅС‹Р№ РІС‹РІРѕРґ РѕР±С…РѕРґР° РґРµСЂРµРІР°
+  * @param traversal Р’РµРєС‚РѕСЂ РєР»СЋС‡РµР№ РґР»СЏ РІС‹РІРѕРґР°
+  */
 static void printCompactTraversal(const std::vector<int>& traversal) {
     if (traversal.size() <= 15) {
         for (int key : traversal) std::cout << key << " ";
@@ -18,39 +27,48 @@ static void printCompactTraversal(const std::vector<int>& traversal) {
     else {
         for (int i = 0; i < 5; i++) std::cout << traversal[i] << " ";
         std::cout << "... ";
+
         int step = traversal.size() / 6;
         for (int i = 1; i <= 5; i++) {
             std::cout << traversal[i * step] << " ";
             if (i < 5) std::cout << "... ";
         }
+
         std::cout << "... ";
-        for (int i = traversal.size() - 5; i < traversal.size(); i++) std::cout << traversal[i] << " ";
+
+        for (int i = traversal.size() - 5; i < traversal.size(); i++) {
+            std::cout << traversal[i] << " ";
+        }
     }
     std::cout << std::endl;
 }
 
+/**
+ * @brief РЎСЂР°РІРЅРµРЅРёРµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє РђР’Р›-РґРµСЂРµРІР° Рё B-РґРµСЂРµРІР°
+ * @param sizes Р’РµРєС‚РѕСЂ СЂР°Р·РјРµСЂРѕРІ РґРµСЂРµРІСЊРµРІ РґР»СЏ Р°РЅР°Р»РёР·Р°
+ */
 static void compareDBDCharacteristics(const std::vector<int>& sizes) {
-    std::cout << "=== ВЫВОД ОБХОДОВ ДЕРЕВЬЕВ ===" << std::endl;
+    std::cout << "=== Р’Р«Р’РћР” РћР‘РҐРћР”РћР’ Р”Р•Р Р•Р’Р¬Р•Р’ ===" << std::endl;
 
     for (int size : sizes) {
         std::vector<int> data = DataGenerator::generateUniqueNumbers(size, 1, size * 10);
 
         TreeNode* avlTree = TreeBuilders::buildAVLTree(data);
-        DBNode* dbTree = TreeBuilders::buildDBTree(data, 2); // t=2, минимальная степень
+        DBNode* dbTree = TreeBuilders::buildDBTree(data, 2);
 
-        std::cout << "АВЛ " << size << ": ";
+        std::cout << "РђР’Р› " << size << ": ";
         printCompactTraversal(TreeProperties::inOrderTraversal(avlTree));
 
         std::vector<int> dbTraversal;
         TreeBuilders::inOrderTraversalDB(dbTree, dbTraversal);
-        std::cout << "ДБД " << size << ": ";
+        std::cout << "Р”Р‘Р” " << size << ": ";
         printCompactTraversal(dbTraversal);
 
         TreeBuilders::deleteTree(avlTree);
         TreeBuilders::deleteDBTree(dbTree);
     }
 
-    std::cout << std::endl << "=== СРАВНЕНИЕ ХАРАКТЕРИСТИК ===" << std::endl;
+    std::cout << std::endl << "=== РЎР РђР’РќР•РќРР• РҐРђР РђРљРўР•Р РРЎРўРРљ ===" << std::endl;
     OutputUtils::printDBTableHeader();
 
     for (int size : sizes) {
@@ -65,13 +83,13 @@ static void compareDBDCharacteristics(const std::vector<int>& sizes) {
 
         int dbCheckSum = TreeProperties::calculateCheckSumDB(dbTree);
         int dbHeight = TreeProperties::calculateHeightDB(dbTree);
-        double dbHeightTheo = TheoryCalculations::theoreticalDBHeight(size, 2); // передаем t
+        double dbHeightTheo = TheoryCalculations::theoreticalDBHeight(size, 2);
         double dbAvgTheo = TheoryCalculations::theoreticalAverageHeightBalanced(size);
 
-        // Выводим минимально: size и уровни (остальное можно расширить позже)
         OutputUtils::printDBTableRow(size,
             avlCheckSum, avlHeight, avlAvg,
             dbCheckSum, dbHeight, dbHeightTheo, dbAvgTheo);
+
         TreeBuilders::deleteTree(avlTree);
         TreeBuilders::deleteDBTree(dbTree);
     }
@@ -79,14 +97,17 @@ static void compareDBDCharacteristics(const std::vector<int>& sizes) {
     std::cout << std::string(90, '=') << std::endl;
 }
 
+/**
+ * @brief РћСЃРЅРѕРІРЅР°СЏ С„СѓРЅРєС†РёСЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕР№ СЂР°Р±РѕС‚С‹ 3
+ */
 void runLab3() {
     std::cout << "==================================================" << std::endl;
-    std::cout << "ЛАБОРАТОРНАЯ РАБОТА 3" << std::endl;
-    std::cout << "Тема: Двоичное Б-дерево поиска (ДБД)" << std::endl;
+    std::cout << "Р›РђР‘РћР РђРўРћР РќРђРЇ Р РђР‘РћРўРђ 3" << std::endl;
+    std::cout << "РўРµРјР°: Р”РІРѕРёС‡РЅРѕРµ Р‘-РґРµСЂРµРІРѕ РїРѕРёСЃРєР° (Р”Р‘Р”)" << std::endl;
     std::cout << "==================================================" << std::endl;
     std::cout << std::endl;
 
-    std::cout << "Построение и сравнение АВЛ и ДБД для размеров: 100, 200, 300, 400, 500" << std::endl;
+    std::cout << "РџРѕСЃС‚СЂРѕРµРЅРёРµ Рё СЃСЂР°РІРЅРµРЅРёРµ РђР’Р› Рё Р”Р‘Р” РґР»СЏ СЂР°Р·РјРµСЂРѕРІ: 100, 200, 300, 400, 500" << std::endl;
     std::cout << std::endl;
 
     std::vector<int> sizes = { 100, 200, 300, 400, 500 };

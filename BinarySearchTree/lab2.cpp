@@ -1,3 +1,8 @@
+/**
+ * @file lab2.cpp
+ * @brief Реализация лабораторной работы №2: сравнение АВЛ-деревьев и ИСДП
+ */
+
 #include "lab2.h"
 #include "data_generator.h"
 #include "tree_builders.h"
@@ -10,9 +15,10 @@
 #include <vector>
 #include <algorithm>
 
-/**
- * @brief Компактный вывод обхода дерева
- */
+ /**
+  * @brief Компактный вывод обхода дерева
+  * @param traversal Вектор ключей для вывода
+  */
 static void printCompactTraversal(const std::vector<int>& traversal) {
     if (traversal.size() <= 15) {
         for (int key : traversal) std::cout << key << " ";
@@ -37,6 +43,10 @@ static void printCompactTraversal(const std::vector<int>& traversal) {
 
 /**
  * @brief Сравнение характеристик АВЛ-дерева и ИСДП для разных размеров
+ * @param sizes Вектор размеров деревьев для анализа
+ * @details
+ * Генерирует данные, строит АВЛ и идеально сбалансированное дерево,
+ * вычисляет характеристики и выводит результаты в таблице.
  */
 static void compareTreeCharacteristics(const std::vector<int>& sizes) {
     std::cout << "=== ВЫВОД ОБХОДОВ ДЕРЕВЬЕВ ===" << std::endl;
@@ -74,7 +84,7 @@ static void compareTreeCharacteristics(const std::vector<int>& sizes) {
 
         int avlCheckSum = TreeProperties::calculateCheckSum(avlTree);
         int avlHeight = TreeProperties::calculateHeight(avlTree);
-        double avlAvg = TheoryCalculations::theoreticalAverageHeightBalanced(size); // можно заменить на формулу для АВЛ
+        double avlAvg = TheoryCalculations::theoreticalAverageHeightBalanced(size);
 
         int ibCheckSum = TreeProperties::calculateCheckSum(ibTree);
         int ibHeight = TreeProperties::calculateHeight(ibTree);
@@ -93,6 +103,9 @@ static void compareTreeCharacteristics(const std::vector<int>& sizes) {
 
 /**
  * @brief Основная функция лабораторной работы 2
+ * @details
+ * Запускает сравнение АВЛ-деревьев и идеально сбалансированных деревьев
+ * для размеров 100, 200, 300, 400, 500.
  */
 void runLab2() {
     std::cout << "==================================================" << std::endl;

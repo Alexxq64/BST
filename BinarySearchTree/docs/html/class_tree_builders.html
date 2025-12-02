@@ -1,0 +1,1020 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторные работы по деревьям поиска: Класс TreeBuilders</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторные работы по деревьям поиска
+   </div>
+   <div id="projectbrief">ИСДП, СДП, АВЛ и B-деревья</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_tree_builders.html','','class_tree_builders-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс TreeBuilders</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tree__builders_8h_source.html">tree_builders.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af9f42d53734e785d890ddb8dcb985dc8" id="r_af9f42d53734e785d890ddb8dcb985dc8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9f42d53734e785d890ddb8dcb985dc8">buildPerfectlyBalancedTree</a> (const std::vector&lt; int &gt; &amp;sortedData)</td></tr>
+<tr class="memdesc:af9f42d53734e785d890ddb8dcb985dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение Идеально Сбалансированного Дерева Поиска (ИСДП).  <br /></td></tr>
+<tr class="memitem:a7423ae5f4c6772747d5f6f96e7d8794c" id="r_a7423ae5f4c6772747d5f6f96e7d8794c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7423ae5f4c6772747d5f6f96e7d8794c">buildRandomSearchTree</a> (const std::vector&lt; int &gt; &amp;data)</td></tr>
+<tr class="memdesc:a7423ae5f4c6772747d5f6f96e7d8794c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение Случайного Дерева Поиска (СДП).  <br /></td></tr>
+<tr class="memitem:aa47471abaa93819a7b6c0e9e13f70d21" id="r_aa47471abaa93819a7b6c0e9e13f70d21"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47471abaa93819a7b6c0e9e13f70d21">buildAVLTree</a> (const std::vector&lt; int &gt; &amp;data)</td></tr>
+<tr class="memdesc:aa47471abaa93819a7b6c0e9e13f70d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение АВЛ-дерева из массива данных  <br /></td></tr>
+<tr class="memitem:af84c859eb194aee82e7a868074751144" id="r_af84c859eb194aee82e7a868074751144"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af84c859eb194aee82e7a868074751144">insertAVL</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, int key)</td></tr>
+<tr class="memdesc:af84c859eb194aee82e7a868074751144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставка узла в АВЛ-дерево с балансировкой  <br /></td></tr>
+<tr class="memitem:a1490c3cc380d2afe14c9e183a4036bff" id="r_a1490c3cc380d2afe14c9e183a4036bff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_d_b_node.html">DBNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1490c3cc380d2afe14c9e183a4036bff">buildDBTree</a> (const std::vector&lt; int &gt; &amp;data, int t)</td></tr>
+<tr class="memdesc:a1490c3cc380d2afe14c9e183a4036bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение Двоичного Б-дерева поиска (ДБД) с минимальной степенью t.  <br /></td></tr>
+<tr class="memitem:a64131b70e0029abb0efcd191fb88650a" id="r_a64131b70e0029abb0efcd191fb88650a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64131b70e0029abb0efcd191fb88650a">insertDBNode</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *&amp;node, int key, int t, int level=0)</td></tr>
+<tr class="memdesc:a64131b70e0029abb0efcd191fb88650a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставка ключа в ДБД  <br /></td></tr>
+<tr class="memitem:a4c2c4a2464b38c284dc18da1cee26553" id="r_a4c2c4a2464b38c284dc18da1cee26553"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c2c4a2464b38c284dc18da1cee26553">splitChild</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *parent, int index, int t)</td></tr>
+<tr class="memdesc:a4c2c4a2464b38c284dc18da1cee26553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделение дочернего узла при переполнении  <br /></td></tr>
+<tr class="memitem:a7438868e352b1f685412657a53fddf19" id="r_a7438868e352b1f685412657a53fddf19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7438868e352b1f685412657a53fddf19">deleteDBTree</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *root)</td></tr>
+<tr class="memdesc:a7438868e352b1f685412657a53fddf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение памяти ДБД  <br /></td></tr>
+<tr class="memitem:a54ecd46f86743b472187f2bb8f11fba9" id="r_a54ecd46f86743b472187f2bb8f11fba9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ecd46f86743b472187f2bb8f11fba9">isBinarySearchTree</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a54ecd46f86743b472187f2bb8f11fba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка, является ли дерево деревом поиска  <br /></td></tr>
+<tr class="memitem:ada5dbe5295b1f0902ffd7d01732a0425" id="r_ada5dbe5295b1f0902ffd7d01732a0425"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada5dbe5295b1f0902ffd7d01732a0425">deleteTree</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:ada5dbe5295b1f0902ffd7d01732a0425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освобождение памяти, занятой деревом  <br /></td></tr>
+<tr class="memitem:a11d97c93a262bbca13c0f4a209008750" id="r_a11d97c93a262bbca13c0f4a209008750"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d97c93a262bbca13c0f4a209008750">inOrderTraversalDB</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *node, std::vector&lt; int &gt; &amp;keys)</td></tr>
+<tr class="memdesc:a11d97c93a262bbca13c0f4a209008750"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-order обход B-дерева  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:aab2c3679e703a976a5de23e3d6cb8feb" id="r_aab2c3679e703a976a5de23e3d6cb8feb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab2c3679e703a976a5de23e3d6cb8feb">buildBalancedTreeRecursive</a> (const std::vector&lt; int &gt; &amp;sortedData, int start, int end)</td></tr>
+<tr class="memdesc:aab2c3679e703a976a5de23e3d6cb8feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивная функция для построения ИСДП  <br /></td></tr>
+<tr class="memitem:aae73c4e6a5e77c65a33a87792c20b72d" id="r_aae73c4e6a5e77c65a33a87792c20b72d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae73c4e6a5e77c65a33a87792c20b72d">insertNode</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;root, int key)</td></tr>
+<tr class="memdesc:aae73c4e6a5e77c65a33a87792c20b72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставка узла в СДП (BST).  <br /></td></tr>
+<tr class="memitem:ae5af001988f35d1a88a7ac17fc0342ca" id="r_ae5af001988f35d1a88a7ac17fc0342ca"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5af001988f35d1a88a7ac17fc0342ca">isBSTRecursive</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, int minValue, int maxValue)</td></tr>
+<tr class="memdesc:ae5af001988f35d1a88a7ac17fc0342ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивная проверка BST.  <br /></td></tr>
+<tr class="memitem:a9158b04fad5c79abded9e394ba7d1365" id="r_a9158b04fad5c79abded9e394ba7d1365"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9158b04fad5c79abded9e394ba7d1365">getHeight</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a9158b04fad5c79abded9e394ba7d1365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение высоты узла  <br /></td></tr>
+<tr class="memitem:a29d7f2173807f2b4cb73adebeff0c9aa" id="r_a29d7f2173807f2b4cb73adebeff0c9aa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29d7f2173807f2b4cb73adebeff0c9aa">getBalance</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a29d7f2173807f2b4cb73adebeff0c9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение баланс-фактора узла  <br /></td></tr>
+<tr class="memitem:a09c24c1bd86c00c9b5c2c6ef342aa22e" id="r_a09c24c1bd86c00c9b5c2c6ef342aa22e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09c24c1bd86c00c9b5c2c6ef342aa22e">rotateLeft</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *x)</td></tr>
+<tr class="memdesc:a09c24c1bd86c00c9b5c2c6ef342aa22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворот поддерева влево  <br /></td></tr>
+<tr class="memitem:ade8f432ef888b4d4e4427a2dac05b26a" id="r_ade8f432ef888b4d4e4427a2dac05b26a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8f432ef888b4d4e4427a2dac05b26a">rotateRight</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *y)</td></tr>
+<tr class="memdesc:ade8f432ef888b4d4e4427a2dac05b26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поворот поддерева вправо  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aa47471abaa93819a7b6c0e9e13f70d21" name="aa47471abaa93819a7b6c0e9e13f70d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa47471abaa93819a7b6c0e9e13f70d21">&#9670;&#160;</a></span>buildAVLTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::buildAVLTree </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построение АВЛ-дерева из массива данных </p>
+<p>Построение АВЛ-дерева</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив уникальных чисел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень АВЛ-дерева</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Для каждого элемента вызывается insertAVL с балансировкой.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив уникальных чисел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень АВЛ-дерева</dd></dl>
+<p>Строит самобалансирующееся бинарное дерево поиска, в котором для каждой вершины высота двух поддеревьев различается не более чем на 1. Обеспечивает гарантированную высоту O(log n).</p>
+<dl class="section note"><dt>Заметки</dt><dd>Выполняет балансировку после каждой вставки </dd></dl>
+
+</div>
+</div>
+<a id="aab2c3679e703a976a5de23e3d6cb8feb" name="aab2c3679e703a976a5de23e3d6cb8feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2c3679e703a976a5de23e3d6cb8feb">&#9670;&#160;</a></span>buildBalancedTreeRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::buildBalancedTreeRecursive </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sortedData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивная функция для построения ИСДП </p>
+<p>Рекурсивная функция построения ИСДП</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sortedData</td><td>Отсортированный массив </td></tr>
+    <tr><td class="paramname">start</td><td>Начальный индекс подмассива </td></tr>
+    <tr><td class="paramname">end</td><td>Конечный индекс подмассива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Корень поддерева</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sortedData</td><td>Отсортированный массив данных </td></tr>
+    <tr><td class="paramname">start</td><td>Начальный индекс подмассива </td></tr>
+    <tr><td class="paramname">end</td><td>Конечный индекс подмассива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень построенного поддерева</dd></dl>
+<p>Алгоритм:</p><ol type="1">
+<li>Если start &gt; end, возвращаем nullptr (пустое поддерево)</li>
+<li>Вычисляем средний индекс: mid = start + (end - start) / 2</li>
+<li>Создаем узел с ключом sortedData[mid]</li>
+<li>Рекурсивно строим левое поддерево из элементов [start, mid-1]</li>
+<li>Рекурсивно строим правое поддерево из элементов [mid+1, end]</li>
+</ol>
+<dl class="section note"><dt>Заметки</dt><dd>Гарантирует сбалансированность: разница высот поддеревьев ≤ 1 </dd></dl>
+
+</div>
+</div>
+<a id="a1490c3cc380d2afe14c9e183a4036bff" name="a1490c3cc380d2afe14c9e183a4036bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1490c3cc380d2afe14c9e183a4036bff">&#9670;&#160;</a></span>buildDBTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_d_b_node.html">DBNode</a> * TreeBuilders::buildDBTree </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построение Двоичного Б-дерева поиска (ДБД) с минимальной степенью t. </p>
+<p>Построение B-дерева (ДБД).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив уникальных чисел </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальная степень узла (t &gt;= 2) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень ДБД</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив ключей для вставки </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальный порядок B-дерева (t ≥ 2) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Корень построенного B-дерева</dd></dl>
+<p>Строит B-дерево заданного порядка t путем последовательной вставки ключей. B-дерево сохраняет балансировку автоматически за счет свойств:</p><ul>
+<li>Каждый узел содержит от t-1 до 2t-1 ключей (кроме корня)</li>
+<li>Все листья находятся на одном уровне</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Для t=2 получаем 2-3 дерево </dd></dl>
+
+</div>
+</div>
+<a id="af9f42d53734e785d890ddb8dcb985dc8" name="af9f42d53734e785d890ddb8dcb985dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f42d53734e785d890ddb8dcb985dc8">&#9670;&#160;</a></span>buildPerfectlyBalancedTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::buildPerfectlyBalancedTree </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sortedData</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построение Идеально Сбалансированного Дерева Поиска (ИСДП). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sortedData</td><td>Отсортированный массив уникальных чисел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень построенного ИСДП</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Массив должен быть отсортирован. Алгоритм выбирает средний элемент как корень.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sortedData</td><td>Отсортированный массив уникальных чисел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень построенного ИСДП</dd></dl>
+<p>Использует стратегию "разделяй и властвуй": выбирает средний элемент массива в качестве корня, затем рекурсивно строит левое и правое поддеревья. Гарантирует минимальную высоту дерева.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Требует отсортированного массива на входе. </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Проверяет отсортированность массива, выводит предупреждение если не отсортирован. </dd></dl>
+
+</div>
+</div>
+<a id="a7423ae5f4c6772747d5f6f96e7d8794c" name="a7423ae5f4c6772747d5f6f96e7d8794c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7423ae5f4c6772747d5f6f96e7d8794c">&#9670;&#160;</a></span>buildRandomSearchTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::buildRandomSearchTree </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построение Случайного Дерева Поиска (СДП). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив чисел (может быть неотсортированным) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень построенного СДП</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Элементы вставляются в порядке массива. Дерево "случайное".</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Массив чисел (не обязательно отсортированный) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на корень построенного СДП</dd></dl>
+<p>Строит BST путем последовательной вставки элементов в том порядке, в котором они идут в массиве. Высота дерева зависит от порядка вставки.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Для случайных данных ожидаемая высота ~2.99*log₂(n) </dd>
+<dd>
+Для отсортированных данных вырождается в список высотой n </dd></dl>
+
+</div>
+</div>
+<a id="a7438868e352b1f685412657a53fddf19" name="a7438868e352b1f685412657a53fddf19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7438868e352b1f685412657a53fddf19">&#9670;&#160;</a></span>deleteDBTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::deleteDBTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Освобождение памяти ДБД </p>
+<p>Освобождение памяти, занятой B-деревом</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева</td></tr>
+    <tr><td class="paramname">root</td><td>Корень B-дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рекурсивно удаляет все узлы дерева в порядке пост-порядкового обхода. </p>
+
+</div>
+</div>
+<a id="ada5dbe5295b1f0902ffd7d01732a0425" name="ada5dbe5295b1f0902ffd7d01732a0425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5dbe5295b1f0902ffd7d01732a0425">&#9670;&#160;</a></span>deleteTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::deleteTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Освобождение памяти, занятой деревом </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section important"><dt>Важно!</dt><dd>Всегда вызывайте после работы с деревом, чтобы избежать утечек памяти.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет пост-порядковый обход дерева (левый-правый-корень) для корректного освобождения памяти всех узлов.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Рекурсивная реализация </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Не вызывает delete для nullptr </dd></dl>
+
+</div>
+</div>
+<a id="a29d7f2173807f2b4cb73adebeff0c9aa" name="a29d7f2173807f2b4cb73adebeff0c9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d7f2173807f2b4cb73adebeff0c9aa">&#9670;&#160;</a></span>getBalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeBuilders::getBalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение баланс-фактора узла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Узел дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Разница высот левого и правого поддеревьев</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Разность высот левого и правого поддеревьев</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Положительное значение: левое поддерево выше </dd>
+<dd>
+Отрицательное значение: правое поддерево выше </dd></dl>
+
+</div>
+</div>
+<a id="a9158b04fad5c79abded9e394ba7d1365" name="a9158b04fad5c79abded9e394ba7d1365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9158b04fad5c79abded9e394ba7d1365">&#9670;&#160;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeBuilders::getHeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение высоты узла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Узел дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота узла (0 если nullptr)</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота узла (0 для nullptr) </dd></dl>
+
+</div>
+</div>
+<a id="a11d97c93a262bbca13c0f4a209008750" name="a11d97c93a262bbca13c0f4a209008750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d97c93a262bbca13c0f4a209008750">&#9670;&#160;</a></span>inOrderTraversalDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::inOrderTraversalDB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>keys</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In-order обход B-дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел </td></tr>
+    <tr><td class="paramname">keys</td><td>Вектор для сохранения ключей в отсортированном порядке</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет обход B-дерева, возвращая ключи в возрастающем порядке. Алгоритм:</p><ol type="1">
+<li>Рекурсивно обходит все дочерние узлы</li>
+<li>После каждого дочернего узла добавляет соответствующий ключ</li>
+<li>Для листовых узлов добавляет все ключи</li>
+</ol>
+<dl class="section note"><dt>Заметки</dt><dd>Результат всегда отсортирован для корректного B-дерева </dd></dl>
+
+</div>
+</div>
+<a id="af84c859eb194aee82e7a868074751144" name="af84c859eb194aee82e7a868074751144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84c859eb194aee82e7a868074751144">&#9670;&#160;</a></span>insertAVL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::insertAVL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вставка узла в АВЛ-дерево с балансировкой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на текущий узел </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для вставки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень поддерева после вставки</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Автоматически выполняются повороты для сохранения балансировки.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на текущий узел </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для вставки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень поддерева после вставки и балансировки</dd></dl>
+<p>Алгоритм:</p><ol type="1">
+<li>Рекурсивная вставка как в обычном BST</li>
+<li>Обновление высоты текущего узла</li>
+<li>Вычисление баланс-фактора</li>
+<li>Проверка четырех случаев нарушения баланса и выполнение соответствующих поворотов</li>
+</ol>
+<dl class="section note"><dt>Заметки</dt><dd>Баланс-фактор = высота(левое_поддерево) - высота(правое_поддерево) </dd></dl>
+
+</div>
+</div>
+<a id="a64131b70e0029abb0efcd191fb88650a" name="a64131b70e0029abb0efcd191fb88650a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64131b70e0029abb0efcd191fb88650a">&#9670;&#160;</a></span>insertDBNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::insertDBNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *&amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вставка ключа в ДБД </p>
+<p>Вставка ключа в B-дерево</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Узел дерева </td></tr>
+    <tr><td class="paramname">key</td><td>Вставляемый ключ </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальная степень узла</td></tr>
+    <tr><td class="paramname">node</td><td>Ссылка на указатель текущего узла (может измениться) </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для вставки </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальный порядок дерева </td></tr>
+    <tr><td class="paramname">level</td><td>Уровень текущего узла (0 для корня)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рекурсивная вставка с разделением переполненных узлов. Если узел переполняется (имеет 2t ключей), он разделяется на два узла по t-1 ключей каждый, а средний ключ поднимается в родительский узел. </p>
+
+</div>
+</div>
+<a id="aae73c4e6a5e77c65a33a87792c20b72d" name="aae73c4e6a5e77c65a33a87792c20b72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae73c4e6a5e77c65a33a87792c20b72d">&#9670;&#160;</a></span>insertNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::insertNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *&amp;</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вставка узла в СДП (BST). </p>
+<p>Вставка узла в BST.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева (может изменяться) </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для вставки</td></tr>
+    <tr><td class="paramname">root</td><td>Корень дерева (передается по ссылке) </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для вставки</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Вставляет новый узел в бинарное дерево поиска, сохраняя свойство BST:</p><ul>
+<li>Все ключи в левом поддереве меньше ключа корня</li>
+<li>Все ключи в правом поддереве больше ключа корня</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Рекурсивная реализация </dd></dl>
+
+</div>
+</div>
+<a id="a54ecd46f86743b472187f2bb8f11fba9" name="a54ecd46f86743b472187f2bb8f11fba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ecd46f86743b472187f2bb8f11fba9">&#9670;&#160;</a></span>isBinarySearchTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TreeBuilders::isBinarySearchTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка, является ли дерево деревом поиска </p>
+<p>Проверка, является ли дерево деревом поиска (BST).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если дерево является BST, иначе false</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если дерево является BST, иначе false</dd></dl>
+<p>Проверяет выполнение свойства BST:</p><ul>
+<li>Все ключи в левом поддереве меньше ключа корня</li>
+<li>Все ключи в правом поддереве больше ключа корня</li>
+<li>Оба поддерева также являются BST</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Использует рекурсивную проверку с передачей допустимых границ ключей </dd></dl>
+
+</div>
+</div>
+<a id="ae5af001988f35d1a88a7ac17fc0342ca" name="ae5af001988f35d1a88a7ac17fc0342ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5af001988f35d1a88a7ac17fc0342ca">&#9670;&#160;</a></span>isBSTRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TreeBuilders::isBSTRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивная проверка BST. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел </td></tr>
+    <tr><td class="paramname">minValue</td><td>Минимальное допустимое значение </td></tr>
+    <tr><td class="paramname">maxValue</td><td>Максимальное допустимое значение </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если поддерево является BST</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел </td></tr>
+    <tr><td class="paramname">minValue</td><td>Минимально допустимое значение ключа </td></tr>
+    <tr><td class="paramname">maxValue</td><td>Максимально допустимое значение ключа </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если поддерево является BST, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="a09c24c1bd86c00c9b5c2c6ef342aa22e" name="a09c24c1bd86c00c9b5c2c6ef342aa22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c24c1bd86c00c9b5c2c6ef342aa22e">&#9670;&#160;</a></span>rotateLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::rotateLeft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поворот поддерева влево </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Корень поддерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень после поворота</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Корень поддерева до поворота </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень поддерева после поворота</dd></dl>
+<p>Используется для балансировки АВЛ-дерева при правом перевесе. Пример: x y \ / \ y -&gt; x z \ z </p>
+
+</div>
+</div>
+<a id="ade8f432ef888b4d4e4427a2dac05b26a" name="ade8f432ef888b4d4e4427a2dac05b26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8f432ef888b4d4e4427a2dac05b26a">&#9670;&#160;</a></span>rotateRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeBuilders::rotateRight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поворот поддерева вправо </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Корень поддерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень после поворота</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Корень поддерева до поворота </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый корень поддерева после поворота</dd></dl>
+<p>Используется для балансировки АВЛ-дерева при левом перевесе. Пример: y x / / \ x -&gt; z y / z </p>
+
+</div>
+</div>
+<a id="a4c2c4a2464b38c284dc18da1cee26553" name="a4c2c4a2464b38c284dc18da1cee26553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2c4a2464b38c284dc18da1cee26553">&#9670;&#160;</a></span>splitChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeBuilders::splitChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разделение дочернего узла при переполнении </p>
+<p>Разделение переполненного дочернего узла</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Родительский узел </td></tr>
+    <tr><td class="paramname">index</td><td>Индекс дочернего узла в массиве детей </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальная степень узла</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский узел </td></tr>
+    <tr><td class="paramname">index</td><td>Индекс дочернего узла для разделения </td></tr>
+    <tr><td class="paramname">t</td><td>Минимальный порядок дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Разделяет переполненный узел y на два узла (y и z) и поднимает средний ключ в родительский узел. Алгоритм:</p><ol type="1">
+<li>Создает новый узел z</li>
+<li>Переносит последние t-1 ключей из y в z</li>
+<li>Переносит последние t дочерних узлов из y в z (если y не лист)</li>
+<li>Вставляет средний ключ y в parent</li>
+<li>Добавляет z как дочерний узел parent </li>
+</ol>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="tree__builders_8h_source.html">tree_builders.h</a></li>
+<li><a class="el" href="tree__builders_8cpp.html">tree_builders.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_tree_builders.html">TreeBuilders</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

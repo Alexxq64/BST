@@ -285,8 +285,18 @@ void OutputUtils::printTheoreticalEstimates(const std::vector<int>& sizes) {
 }
 
 
-
-
+/**
+ * @brief Вывод заголовка таблицы для сравнения АВЛ и ДБД
+ *
+ * @details
+ * Форматирует и выводит заголовок таблицы для лабораторной работы 3.
+ * Таблица содержит сравнение характеристик АВЛ-деревьев и B-деревьев.
+ *
+ * Структура заголовка:
+ * 1. Общий заголовок с названиями групп (АВЛ и ДБД)
+ * 2. Подзаголовки с названиями столбцов
+ * 3. Разделительная линия
+ */
 void OutputUtils::printDBTableHeader() {
     std::cout
         << std::setw(6) << "" << " | "
@@ -319,6 +329,23 @@ void OutputUtils::printDBTableHeader() {
     std::cout << std::string(90, '-') << std::endl;
 }
 
+/**
+ * @brief Вывод строки таблицы для сравнения АВЛ и ДБД
+ *
+ * @param size Размер дерева (количество элементов)
+ * @param avlCheckSum Контрольная сумма АВЛ-дерева
+ * @param avlHeight Фактическая высота АВЛ-дерева
+ * @param avlAvg Теоретическая средняя высота АВЛ-дерева
+ * @param dbCheckSum Контрольная сумма B-дерева
+ * @param dbLevels Фактическое количество уровней B-дерева
+ * @param dbHeightTheo Теоретическая высота B-дерева
+ * @param dbAvgTheo Теоретическая средняя высота B-дерева
+ *
+ * @details
+ * Форматирует и выводит одну строку таблицы с результатами для конкретного размера.
+ * Используется для сравнения характеристик АВЛ-деревьев и B-деревьев (ДБД).
+ * Все числовые значения выравниваются для удобства сравнения.
+ */
 void OutputUtils::printDBTableRow(int size,
     int avlCheckSum, int avlHeight, double avlAvg,
     int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo) {

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторные работы по деревьям поиска: Исходный файл memory_utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторные работы по деревьям поиска
+   </div>
+   <div id="projectbrief">ИСДП, СДП, АВЛ и B-деревья</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('memory__utils_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">memory_utils.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="memory__utils_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MEMORY_UTILS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MEMORY_UTILS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="tree__node_8h.html">tree_node.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_memory_utils.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_memory_utils.html">MemoryUtils</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* <a class="code hl_function" href="class_memory_utils.html#a0c7db8ae5ac282d28c43b0b45a4d60bc">createTreeNode</a>(<span class="keywordtype">int</span> key);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_memory_utils.html#a58cf68bb5cb51003881aecdc255df140">deleteTreeNode</a>(<a class="code hl_struct" href="struct_tree_node.html">TreeNode</a>* node);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_memory_utils.html#a2fe5c584e708981613ccbc8db1b85d9d">checkMemoryLeaks</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_memory_utils.html#af6c9b6b42e8aa5cef79b98eab1091641">emergencyCleanup</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">// MEMORY_UTILS_H</span></div>
+<div class="ttc" id="aclass_memory_utils_html"><div class="ttname"><a href="class_memory_utils.html">MemoryUtils</a></div><div class="ttdef"><b>Определения</b> memory_utils.h:11</div></div>
+<div class="ttc" id="aclass_memory_utils_html_a0c7db8ae5ac282d28c43b0b45a4d60bc"><div class="ttname"><a href="class_memory_utils.html#a0c7db8ae5ac282d28c43b0b45a4d60bc">MemoryUtils::createTreeNode</a></div><div class="ttdeci">static TreeNode * createTreeNode(int key)</div><div class="ttdoc">Создание узла с отслеживанием памяти</div><div class="ttdef"><b>Определения</b> memory_utils.cpp:39</div></div>
+<div class="ttc" id="aclass_memory_utils_html_a2fe5c584e708981613ccbc8db1b85d9d"><div class="ttname"><a href="class_memory_utils.html#a2fe5c584e708981613ccbc8db1b85d9d">MemoryUtils::checkMemoryLeaks</a></div><div class="ttdeci">static int checkMemoryLeaks()</div><div class="ttdoc">Проверка утечек памяти</div><div class="ttdef"><b>Определения</b> memory_utils.cpp:97</div></div>
+<div class="ttc" id="aclass_memory_utils_html_a58cf68bb5cb51003881aecdc255df140"><div class="ttname"><a href="class_memory_utils.html#a58cf68bb5cb51003881aecdc255df140">MemoryUtils::deleteTreeNode</a></div><div class="ttdeci">static void deleteTreeNode(TreeNode *node)</div><div class="ttdoc">Удаление узла с отслеживанием памяти</div><div class="ttdef"><b>Определения</b> memory_utils.cpp:64</div></div>
+<div class="ttc" id="aclass_memory_utils_html_af6c9b6b42e8aa5cef79b98eab1091641"><div class="ttname"><a href="class_memory_utils.html#af6c9b6b42e8aa5cef79b98eab1091641">MemoryUtils::emergencyCleanup</a></div><div class="ttdeci">static void emergencyCleanup()</div><div class="ttdoc">Аварийная очистка всей памяти</div><div class="ttdef"><b>Определения</b> memory_utils.cpp:134</div></div>
+<div class="ttc" id="astruct_tree_node_html"><div class="ttname"><a href="struct_tree_node.html">TreeNode</a></div><div class="ttdef"><b>Определения</b> tree_node.h:13</div></div>
+<div class="ttc" id="atree__node_8h_html"><div class="ttname"><a href="tree__node_8h.html">tree_node.h</a></div><div class="ttdoc">Узел бинарного дерева / АВЛ-дерева</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="memory__utils_8h.html">memory_utils.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

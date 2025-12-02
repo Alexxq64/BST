@@ -1,0 +1,45 @@
+# ============ КОДИРОВКА (ДОБАВЬТЕ ЭТО!) ============
+DOXYFILE_ENCODING      = UTF-8
+INPUT_ENCODING         = Windows-1251  # или CP1251
+OUTPUT_LANGUAGE        = Russian
+
+# Базовые настройки проекта
+PROJECT_NAME           = "Лабораторные работы по деревьям поиска"
+PROJECT_BRIEF          = "ИСДП, СДП, АВЛ и B-деревья"
+OUTPUT_DIRECTORY       = ./docs
+CREATE_SUBDIRS         = NO
+
+# Настройки вывода
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+
+# Настройки извлечения
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# Настройки исходного кода
+INPUT                  = .
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = NO  # Только текущая папка
+EXCLUDE                = x64/  # Исключить папку x64
+EXAMPLE_PATH           = 
+
+# Настройки разметки
+ALIASES                = 
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = NO
+MARKDOWN_SUPPORT       = YES
+
+# Настройки диаграмм (опционально)
+HAVE_DOT               = NO  # Если нет Graphviz
+# CALL_GRAPH             = YES  # Раскомментировать если установлен Graphviz
+# CALLER_GRAPH           = YES  # Раскомментировать если установлен Graphviz
+
+# Настройки поиска
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO

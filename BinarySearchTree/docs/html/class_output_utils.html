@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторные работы по деревьям поиска: Класс OutputUtils</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторные работы по деревьям поиска
+   </div>
+   <div id="projectbrief">ИСДП, СДП, АВЛ и B-деревья</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_output_utils.html','','class_output_utils-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс OutputUtils</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="output__utils_8h_source.html">output_utils.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a3bc28e5290563e1a42b5bf1bca4040b1" id="r_a3bc28e5290563e1a42b5bf1bca4040b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bc28e5290563e1a42b5bf1bca4040b1">printTreeBracket</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a3bc28e5290563e1a42b5bf1bca4040b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод дерева в виде скобочной записи  <br /></td></tr>
+<tr class="memitem:a9942c9164f65a05db313d850c6a7c9cc" id="r_a9942c9164f65a05db313d850c6a7c9cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9942c9164f65a05db313d850c6a7c9cc">printInOrder</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, const std::string &amp;title=&quot;In-order обход:&quot;)</td></tr>
+<tr class="memdesc:a9942c9164f65a05db313d850c6a7c9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод in-order обхода дерева  <br /></td></tr>
+<tr class="memitem:a50aed2d5eea34d9bb1c579c3a7e6ed74" id="r_a50aed2d5eea34d9bb1c579c3a7e6ed74"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50aed2d5eea34d9bb1c579c3a7e6ed74">printInOrderSampled</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, const std::string &amp;title=&quot;In-order обход:&quot;)</td></tr>
+<tr class="memdesc:a50aed2d5eea34d9bb1c579c3a7e6ed74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод in-order обхода дерева с репрезентативной выборкой  <br /></td></tr>
+<tr class="memitem:a288e7a16eb15ba4a77805a0043f406f7" id="r_a288e7a16eb15ba4a77805a0043f406f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288e7a16eb15ba4a77805a0043f406f7">printTreeProperties</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, const std::string &amp;treeName)</td></tr>
+<tr class="memdesc:a288e7a16eb15ba4a77805a0043f406f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод характеристик дерева  <br /></td></tr>
+<tr class="memitem:a9f746ed3b5ec2cb93ef68fed59c9888a" id="r_a9f746ed3b5ec2cb93ef68fed59c9888a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f746ed3b5ec2cb93ef68fed59c9888a">printTableHeader</a> (const std::string &amp;leftGroup, const std::string &amp;rightGroup)</td></tr>
+<tr class="memdesc:a9f746ed3b5ec2cb93ef68fed59c9888a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод заголовка таблицы результатов  <br /></td></tr>
+<tr class="memitem:a7cb62a582671c2dbb03a403731c87587" id="r_a7cb62a582671c2dbb03a403731c87587"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb62a582671c2dbb03a403731c87587">printTableRow</a> (int size, int checkSumSP, double heightSP, double theoreticalAvgHeightSP, int checkSumIB, double heightIB, double theoreticalAvgHeightIB)</td></tr>
+<tr class="memdesc:a7cb62a582671c2dbb03a403731c87587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод строки таблицы для одного размера дерева  <br /></td></tr>
+<tr class="memitem:ae5e0d6cbad4a6c36d7a837d709ea9f2d" id="r_ae5e0d6cbad4a6c36d7a837d709ea9f2d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5e0d6cbad4a6c36d7a837d709ea9f2d">printTheoreticalEstimates</a> (const std::vector&lt; int &gt; &amp;sizes)</td></tr>
+<tr class="memdesc:ae5e0d6cbad4a6c36d7a837d709ea9f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод теоретических оценок  <br /></td></tr>
+<tr class="memitem:a86d9e100cd186c6f71b97fdc54fd4c8d" id="r_a86d9e100cd186c6f71b97fdc54fd4c8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d9e100cd186c6f71b97fdc54fd4c8d">printDBTableHeader</a> ()</td></tr>
+<tr class="memdesc:a86d9e100cd186c6f71b97fdc54fd4c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод заголовка таблицы для сравнения АВЛ и ДБД  <br /></td></tr>
+<tr class="memitem:ab5a11b3c537a64a474240d0068ddebce" id="r_ab5a11b3c537a64a474240d0068ddebce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5a11b3c537a64a474240d0068ddebce">printDBTableRow</a> (int size, int avlCheckSum, int avlHeight, double avlAvg, int dbCheckSum, int dbLevels, double dbHeightTheo, double dbAvgTheo)</td></tr>
+<tr class="memdesc:ab5a11b3c537a64a474240d0068ddebce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод строки таблицы для сравнения АВЛ и ДБД  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a6cc48ef0d72b79346e776c42729d27f7" id="r_a6cc48ef0d72b79346e776c42729d27f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cc48ef0d72b79346e776c42729d27f7">printTreeBracketRecursive</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node)</td></tr>
+<tr class="memdesc:a6cc48ef0d72b79346e776c42729d27f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивная функция для вывода скобочной записи  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a86d9e100cd186c6f71b97fdc54fd4c8d" name="a86d9e100cd186c6f71b97fdc54fd4c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d9e100cd186c6f71b97fdc54fd4c8d">&#9670;&#160;</a></span>printDBTableHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printDBTableHeader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод заголовка таблицы для сравнения АВЛ и ДБД </p>
+<p>Выводит форматированный заголовок таблицы для лабораторной работы 3. Таблица содержит сравнение характеристик АВЛ-деревьев и B-деревьев.</p>
+<p>Форматирует и выводит заголовок таблицы для лабораторной работы 3. Таблица содержит сравнение характеристик АВЛ-деревьев и B-деревьев.</p>
+<p>Структура заголовка:</p><ol type="1">
+<li>Общий заголовок с названиями групп (АВЛ и ДБД)</li>
+<li>Подзаголовки с названиями столбцов</li>
+<li>Разделительная линия </li>
+</ol>
+
+</div>
+</div>
+<a id="ab5a11b3c537a64a474240d0068ddebce" name="ab5a11b3c537a64a474240d0068ddebce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a11b3c537a64a474240d0068ddebce">&#9670;&#160;</a></span>printDBTableRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printDBTableRow </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>avlCheckSum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>avlHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>avlAvg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dbCheckSum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dbLevels</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dbHeightTheo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>dbAvgTheo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод строки таблицы для сравнения АВЛ и ДБД </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Размер дерева (количество элементов) </td></tr>
+    <tr><td class="paramname">avlCheckSum</td><td>Контрольная сумма АВЛ-дерева </td></tr>
+    <tr><td class="paramname">avlHeight</td><td>Фактическая высота АВЛ-дерева </td></tr>
+    <tr><td class="paramname">avlAvg</td><td>Теоретическая средняя высота АВЛ-дерева </td></tr>
+    <tr><td class="paramname">dbCheckSum</td><td>Контрольная сумма B-дерева </td></tr>
+    <tr><td class="paramname">dbLevels</td><td>Фактическое количество уровней B-дерева </td></tr>
+    <tr><td class="paramname">dbHeightTheo</td><td>Теоретическая высота B-дерева </td></tr>
+    <tr><td class="paramname">dbAvgTheo</td><td>Теоретическая средняя высота B-дерева</td></tr>
+    <tr><td class="paramname">size</td><td>Размер дерева (количество элементов) </td></tr>
+    <tr><td class="paramname">avlCheckSum</td><td>Контрольная сумма АВЛ-дерева </td></tr>
+    <tr><td class="paramname">avlHeight</td><td>Фактическая высота АВЛ-дерева </td></tr>
+    <tr><td class="paramname">avlAvg</td><td>Теоретическая средняя высота АВЛ-дерева </td></tr>
+    <tr><td class="paramname">dbCheckSum</td><td>Контрольная сумма B-дерева </td></tr>
+    <tr><td class="paramname">dbLevels</td><td>Фактическое количество уровней B-дерева </td></tr>
+    <tr><td class="paramname">dbHeightTheo</td><td>Теоретическая высота B-дерева </td></tr>
+    <tr><td class="paramname">dbAvgTheo</td><td>Теоретическая средняя высота B-дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Форматирует и выводит одну строку таблицы с результатами для конкретного размера. Используется для сравнения характеристик АВЛ-деревьев и B-деревьев (ДБД). Все числовые значения выравниваются для удобства сравнения. </p>
+
+</div>
+</div>
+<a id="a9942c9164f65a05db313d850c6a7c9cc" name="a9942c9164f65a05db313d850c6a7c9cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9942c9164f65a05db313d850c6a7c9cc">&#9670;&#160;</a></span>printInOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printInOrder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>title</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;In-order&#160;обход:&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод in-order обхода дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+    <tr><td class="paramname">title</td><td>Заголовок для вывода</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выводит последовательность ключей в порядке in-order обхода</p>
+<p>Выводит последовательность ключей, полученную при in-order обходе. Для BST это должна быть отсортированная последовательность. </p>
+
+</div>
+</div>
+<a id="a50aed2d5eea34d9bb1c579c3a7e6ed74" name="a50aed2d5eea34d9bb1c579c3a7e6ed74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50aed2d5eea34d9bb1c579c3a7e6ed74">&#9670;&#160;</a></span>printInOrderSampled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printInOrderSampled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>title</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;In-order&#160;обход:&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод in-order обхода дерева с репрезентативной выборкой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+    <tr><td class="paramname">title</td><td>Заголовок для вывода</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выводит первые 5 элементов, 5 элементов из середины (разделенных через ...) и последние 5 элементов для больших деревьев.</p>
+<p>Для больших деревьев выводит:</p><ul>
+<li>Первые 5 элементов</li>
+<li>5 элементов из середины, разделенных через ...</li>
+<li>Последние 5 элементов </li>
+</ul>
+
+</div>
+</div>
+<a id="a9f746ed3b5ec2cb93ef68fed59c9888a" name="a9f746ed3b5ec2cb93ef68fed59c9888a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f746ed3b5ec2cb93ef68fed59c9888a">&#9670;&#160;</a></span>printTableHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTableHeader </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>leftGroup</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>rightGroup</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод заголовка таблицы результатов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leftGroup</td><td>Название левой группы деревьев (например, "СДП") </td></tr>
+    <tr><td class="paramname">rightGroup</td><td>Название правой группы деревьев (например, "ИСДП")</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выводит форматированный заголовок для таблицы 1 из задания</p>
+<p>Форматирует и выводит заголовок для таблицы 1 из задания лабораторной работы. Столбцы выравниваются для удобства чтения. </p>
+
+</div>
+</div>
+<a id="a7cb62a582671c2dbb03a403731c87587" name="a7cb62a582671c2dbb03a403731c87587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb62a582671c2dbb03a403731c87587">&#9670;&#160;</a></span>printTableRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTableRow </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>checkSumSP</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>heightSP</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theoreticalAvgHeightSP</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>checkSumIB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>heightIB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>theoreticalAvgHeightIB</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод строки таблицы для одного размера дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Размер дерева </td></tr>
+    <tr><td class="paramname">checkSumSP</td><td>Контрольная сумма СДП </td></tr>
+    <tr><td class="paramname">heightSP</td><td>Высота СДП </td></tr>
+    <tr><td class="paramname">theoreticalAvgHeightSP</td><td>Теоретическая оценка средней высоты СДП </td></tr>
+    <tr><td class="paramname">checkSumIB</td><td>Контрольная сумма ИСДП </td></tr>
+    <tr><td class="paramname">heightIB</td><td>Высота ИСДП </td></tr>
+    <tr><td class="paramname">theoreticalAvgHeightIB</td><td>Теоретическая оценка средней высоты ИСДП</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Форматирует и выводит одну строку таблицы с результатами для конкретного размера дерева. Все числовые значения выравниваются для удобства сравнения. </p>
+
+</div>
+</div>
+<a id="ae5e0d6cbad4a6c36d7a837d709ea9f2d" name="ae5e0d6cbad4a6c36d7a837d709ea9f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e0d6cbad4a6c36d7a837d709ea9f2d">&#9670;&#160;</a></span>printTheoreticalEstimates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTheoreticalEstimates </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sizes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод теоретических оценок </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizes</td><td>Вектор размеров деревьев</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выводит таблицу с теоретическими оценками для сравнения с практическими результатами</p>
+<p>Выводит таблицу с теоретическими оценками высоты и средней высоты для ИСДП и СДП различных размеров. </p>
+
+</div>
+</div>
+<a id="a3bc28e5290563e1a42b5bf1bca4040b1" name="a3bc28e5290563e1a42b5bf1bca4040b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc28e5290563e1a42b5bf1bca4040b1">&#9670;&#160;</a></span>printTreeBracket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTreeBracket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод дерева в виде скобочной записи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Формат: (корень левое-поддерево правое-поддерево) Пример: (5 (3 (1) (4)) (8 (7) (9)))</p>
+<p>Скобочная запись удобна для визуализации структуры дерева. Формат: (корень левое-поддерево правое-поддерево) Пустые поддеревья не выводятся. </p>
+
+</div>
+</div>
+<a id="a6cc48ef0d72b79346e776c42729d27f7" name="a6cc48ef0d72b79346e776c42729d27f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc48ef0d72b79346e776c42729d27f7">&#9670;&#160;</a></span>printTreeBracketRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTreeBracketRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивная функция для вывода скобочной записи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рекурсивно обходит дерево и выводит его структуру. Для каждого узла выводит его ключ и рекурсивно левое и правое поддеревья. </p>
+
+</div>
+</div>
+<a id="a288e7a16eb15ba4a77805a0043f406f7" name="a288e7a16eb15ba4a77805a0043f406f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288e7a16eb15ba4a77805a0043f406f7">&#9670;&#160;</a></span>printTreeProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputUtils::printTreeProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>treeName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вывод характеристик дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+    <tr><td class="paramname">treeName</td><td>Название дерева (для заголовка)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выводит размер, высоту, контрольную сумму и среднюю высоту</p>
+<p>Выводит все основные характеристики дерева в удобном формате. Используется для отладки и демонстрации работы программы. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="output__utils_8h_source.html">output_utils.h</a></li>
+<li><a class="el" href="output__utils_8cpp.html">output_utils.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_output_utils.html">OutputUtils</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

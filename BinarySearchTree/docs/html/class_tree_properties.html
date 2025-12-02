@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторные работы по деревьям поиска: Класс TreeProperties</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторные работы по деревьям поиска
+   </div>
+   <div id="projectbrief">ИСДП, СДП, АВЛ и B-деревья</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_tree_properties.html','','class_tree_properties-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс TreeProperties</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tree__properties_8h_source.html">tree_properties.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a500c608c4f864442f9b1327d9b75eae4" id="r_a500c608c4f864442f9b1327d9b75eae4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a500c608c4f864442f9b1327d9b75eae4">calculateSize</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a500c608c4f864442f9b1327d9b75eae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление размера дерева (количество узлов).  <br /></td></tr>
+<tr class="memitem:abf96c0593f0fc749f3b610a8747d75b2" id="r_abf96c0593f0fc749f3b610a8747d75b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf96c0593f0fc749f3b610a8747d75b2">calculateHeight</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:abf96c0593f0fc749f3b610a8747d75b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление высоты дерева  <br /></td></tr>
+<tr class="memitem:a58da077b8fc393534e92205b8a190255" id="r_a58da077b8fc393534e92205b8a190255"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58da077b8fc393534e92205b8a190255">calculateCheckSum</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a58da077b8fc393534e92205b8a190255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление контрольной суммы данных дерева  <br /></td></tr>
+<tr class="memitem:af60d52bcb3526449d788279e283be667" id="r_af60d52bcb3526449d788279e283be667"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af60d52bcb3526449d788279e283be667">calculateAverageHeight</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:af60d52bcb3526449d788279e283be667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление средней высоты дерева  <br /></td></tr>
+<tr class="memitem:a2788041ab64c9d4f9d299b7830958170" id="r_a2788041ab64c9d4f9d299b7830958170"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2788041ab64c9d4f9d299b7830958170">inOrderTraversal</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root)</td></tr>
+<tr class="memdesc:a2788041ab64c9d4f9d299b7830958170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обход дерева слева направо (in-order traversal).  <br /></td></tr>
+<tr class="memitem:ab2762bb415141ece8d5d9ab78cac8192" id="r_ab2762bb415141ece8d5d9ab78cac8192"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_tree_node.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2762bb415141ece8d5d9ab78cac8192">searchNode</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *root, int key)</td></tr>
+<tr class="memdesc:ab2762bb415141ece8d5d9ab78cac8192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск узла с заданным ключом в дереве поиска  <br /></td></tr>
+<tr class="memitem:a0abd15a75e6cf692339b450ef8f38c3c" id="r_a0abd15a75e6cf692339b450ef8f38c3c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0abd15a75e6cf692339b450ef8f38c3c">calculateCheckSumDB</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *root)</td></tr>
+<tr class="memdesc:a0abd15a75e6cf692339b450ef8f38c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление контрольной суммы B-дерева (ДБД).  <br /></td></tr>
+<tr class="memitem:aba4f318515ba7f4b9a972d06a707109f" id="r_aba4f318515ba7f4b9a972d06a707109f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba4f318515ba7f4b9a972d06a707109f">calculateLevelsDB</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *root, int level=0)</td></tr>
+<tr class="memdesc:aba4f318515ba7f4b9a972d06a707109f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление взвешенной суммы уровней B-дерева  <br /></td></tr>
+<tr class="memitem:a2b1fa0e39c81a3324c7205a4117fdc81" id="r_a2b1fa0e39c81a3324c7205a4117fdc81"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b1fa0e39c81a3324c7205a4117fdc81">calculateHeightDB</a> (const <a class="el" href="struct_d_b_node.html">DBNode</a> *node)</td></tr>
+<tr class="memdesc:a2b1fa0e39c81a3324c7205a4117fdc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление высоты B-дерева (ДБД).  <br /></td></tr>
+<tr class="memitem:a59b985806a2bd54481f3cf2fe7fd18b0" id="r_a59b985806a2bd54481f3cf2fe7fd18b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_d_b_node.html">DBNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b985806a2bd54481f3cf2fe7fd18b0">searchNodeDB</a> (<a class="el" href="struct_d_b_node.html">DBNode</a> *root, int key)</td></tr>
+<tr class="memdesc:a59b985806a2bd54481f3cf2fe7fd18b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск ключа в B-дереве (ДБД).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a0e8fc74492d58ed192ec9d149836dd30" id="r_a0e8fc74492d58ed192ec9d149836dd30"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e8fc74492d58ed192ec9d149836dd30">calculateAverageHeightRecursive</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, int currentHeight, double &amp;totalHeight, int &amp;leafCount)</td></tr>
+<tr class="memdesc:a0e8fc74492d58ed192ec9d149836dd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вычисления средней высоты  <br /></td></tr>
+<tr class="memitem:a940ad5f74bade9920215ed49c8710d9d" id="r_a940ad5f74bade9920215ed49c8710d9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a940ad5f74bade9920215ed49c8710d9d">inOrderRecursive</a> (<a class="el" href="struct_tree_node.html">TreeNode</a> *node, std::vector&lt; int &gt; &amp;result)</td></tr>
+<tr class="memdesc:a940ad5f74bade9920215ed49c8710d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для in-order обхода  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="af60d52bcb3526449d788279e283be667" name="af60d52bcb3526449d788279e283be667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60d52bcb3526449d788279e283be667">&#9670;&#160;</a></span>calculateAverageHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TreeProperties::calculateAverageHeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление средней высоты дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Средняя высота дерева (средняя длина пути от корня до всех листьев)</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Средняя высота вычисляется как сумма длин путей до всех листьев, деленная на количество листьев.</dd></dl>
+<p>Средняя высота вычисляется как среднее арифметическое длин путей от корня до всех листьев дерева. </p>
+
+</div>
+</div>
+<a id="a0e8fc74492d58ed192ec9d149836dd30" name="a0e8fc74492d58ed192ec9d149836dd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8fc74492d58ed192ec9d149836dd30">&#9670;&#160;</a></span>calculateAverageHeightRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeProperties::calculateAverageHeightRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>currentHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>totalHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>leafCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вспомогательная функция для вычисления средней высоты </p>
+<p>Вспомогательная рекурсивная функция для вычисления средней высоты</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел </td></tr>
+    <tr><td class="paramname">currentHeight</td><td>Текущая глубина узла </td></tr>
+    <tr><td class="paramname">totalHeight</td><td>Суммарная высота (аккумулируется) </td></tr>
+    <tr><td class="paramname">leafCount</td><td>Количество листьев (аккумулируется)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рекурсивно обходит дерево и аккумулирует данные для вычисления средней высоты.</p>
+<p>Обходит дерево и для каждого листа добавляет его глубину к общей сумме и увеличивает счетчик листьев. </p>
+
+</div>
+</div>
+<a id="a58da077b8fc393534e92205b8a190255" name="a58da077b8fc393534e92205b8a190255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58da077b8fc393534e92205b8a190255">&#9670;&#160;</a></span>calculateCheckSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateCheckSum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление контрольной суммы данных дерева </p>
+<p>Вычисление контрольной суммы</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сумма ключей всех узлов дерева</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Контрольная сумма используется для проверки корректности данных при сравнении различных представлений одного набора данных.</dd></dl>
+<p>Контрольная сумма - это сумма всех ключей в дереве. Используется для проверки, что два дерева содержат одинаковые данные. </p>
+
+</div>
+</div>
+<a id="a0abd15a75e6cf692339b450ef8f38c3c" name="a0abd15a75e6cf692339b450ef8f38c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abd15a75e6cf692339b450ef8f38c3c">&#9670;&#160;</a></span>calculateCheckSumDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateCheckSumDB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление контрольной суммы B-дерева (ДБД). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень B-дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сумма всех ключей в дереве</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Используется для проверки корректности построения B-дерева</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень B-дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сумма всех ключей в дереве</dd></dl>
+<p>Рекурсивно вычисляет сумму всех ключей в B-дереве. Алгоритм:</p><ol type="1">
+<li>Суммирует все ключи текущего узла</li>
+<li>Рекурсивно суммирует ключи всех дочерних узлов</li>
+</ol>
+<p>Используется для проверки корректности построения дерева. </p>
+
+</div>
+</div>
+<a id="abf96c0593f0fc749f3b610a8747d75b2" name="abf96c0593f0fc749f3b610a8747d75b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf96c0593f0fc749f3b610a8747d75b2">&#9670;&#160;</a></span>calculateHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateHeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление высоты дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота дерева (максимальная длина пути от корня до листа)</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Высота пустого дерева равна -1, высота дерева из одного узла равна 0.</dd></dl>
+<p>Высота дерева определяется как максимальная длина пути от корня до листа. Формула: height(node) = 1 + max(height(left), height(right)) </p>
+
+</div>
+</div>
+<a id="a2b1fa0e39c81a3324c7205a4117fdc81" name="a2b1fa0e39c81a3324c7205a4117fdc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1fa0e39c81a3324c7205a4117fdc81">&#9670;&#160;</a></span>calculateHeightDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateHeightDB </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление высоты B-дерева (ДБД). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел B-дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота дерева (количество уровней)</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Высота измеряется в количестве уровней (корень = уровень 1)</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Указатель на узел B-дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Высота дерева (количество уровней)</dd></dl>
+<p>Высота B-дерева определяется как:</p><ul>
+<li>1 для листового узла</li>
+<li>1 + максимальная высота среди дочерних узлов для внутреннего узла</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Высота измеряется в количестве уровней, где корень = уровень 1 </dd></dl>
+
+</div>
+</div>
+<a id="aba4f318515ba7f4b9a972d06a707109f" name="aba4f318515ba7f4b9a972d06a707109f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4f318515ba7f4b9a972d06a707109f">&#9670;&#160;</a></span>calculateLevelsDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateLevelsDB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление взвешенной суммы уровней B-дерева </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень B-дерева </td></tr>
+    <tr><td class="paramname">level</td><td>Текущий уровень (по умолчанию 0 для корня) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Взвешенная сумма: ∑(уровень × количество_ключей_на_уровне)</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Используется для вычисления средней глубины ключей в B-дереве</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень B-дерева </td></tr>
+    <tr><td class="paramname">level</td><td>Текущий уровень (начинается с 0 для корня) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Взвешенная сумма: ∑(уровень × количество_ключей_на_уровне)</dd></dl>
+<p>Вычисляет сумму произведений уровня узла на количество ключей в нем. Используется для вычисления средней глубины ключей в B-дереве.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Уровень корня = 0 (или 1, в зависимости от определения) </dd></dl>
+
+</div>
+</div>
+<a id="a500c608c4f864442f9b1327d9b75eae4" name="a500c608c4f864442f9b1327d9b75eae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500c608c4f864442f9b1327d9b75eae4">&#9670;&#160;</a></span>calculateSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TreeProperties::calculateSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление размера дерева (количество узлов). </p>
+<p>Вычисление размера дерева</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество узлов в дереве</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Размер пустого дерева равен 0.</dd></dl>
+<p>Использует рекурсивный подход для подсчета всех узлов в дереве. Формула: size(node) = 1 + size(left) + size(right) </p>
+
+</div>
+</div>
+<a id="a940ad5f74bade9920215ed49c8710d9d" name="a940ad5f74bade9920215ed49c8710d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940ad5f74bade9920215ed49c8710d9d">&#9670;&#160;</a></span>inOrderRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeProperties::inOrderRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вспомогательная функция для in-order обхода </p>
+<p>Рекурсивная реализация in-order обхода</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Текущий узел </td></tr>
+    <tr><td class="paramname">result</td><td>Вектор для сохранения результата</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Рекурсивно выполняет обход в порядке: левое поддерево -&gt; узел -&gt; правое поддерево.</p>
+<p>Алгоритм:</p><ol type="1">
+<li>Рекурсивно обойти левое поддерево</li>
+<li>Посетить текущий узел (добавить ключ в результат)</li>
+<li>Рекурсивно обойти правое поддерево </li>
+</ol>
+
+</div>
+</div>
+<a id="a2788041ab64c9d4f9d299b7830958170" name="a2788041ab64c9d4f9d299b7830958170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2788041ab64c9d4f9d299b7830958170">&#9670;&#160;</a></span>inOrderTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int &gt; TreeProperties::inOrderTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обход дерева слева направо (in-order traversal). </p>
+<p>In-order обход дерева (левый-корень-правый).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор ключей в порядке in-order обхода</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>In-order обход для BST возвращает отсортированную последовательность.</dd></dl>
+<p>Для деревьев поиска возвращает отсортированную последовательность ключей. Это полезно для проверки корректности построения BST. </p>
+
+</div>
+</div>
+<a id="ab2762bb415141ece8d5d9ab78cac8192" name="ab2762bb415141ece8d5d9ab78cac8192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2762bb415141ece8d5d9ab78cac8192">&#9670;&#160;</a></span>searchNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_tree_node.html">TreeNode</a> * TreeProperties::searchNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_tree_node.html">TreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поиск узла с заданным ключом в дереве поиска </p>
+<p>Поиск узла в дереве поиска</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Указатель на корень дерева поиска </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на найденный узел или nullptr если узел не найден</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Функция работает только для деревьев поиска (BST). Временная сложность: O(h), где h - высота дерева.</dd></dl>
+<p>Использует свойства BST для эффективного поиска:</p><ul>
+<li>Если ключ равен ключу текущего узла - узел найден</li>
+<li>Если ключ меньше - ищем в левом поддереве</li>
+<li>Если ключ больше - ищем в правом поддереве</li>
+</ul>
+<p>Временная сложность зависит от высоты дерева: O(h) </p>
+
+</div>
+</div>
+<a id="a59b985806a2bd54481f3cf2fe7fd18b0" name="a59b985806a2bd54481f3cf2fe7fd18b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b985806a2bd54481f3cf2fe7fd18b0">&#9670;&#160;</a></span>searchNodeDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_d_b_node.html">DBNode</a> * TreeProperties::searchNodeDB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_b_node.html">DBNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поиск ключа в B-дереве (ДБД). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень B-дерева </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на узел, содержащий ключ, или nullptr, если не найден</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Использует рекурсивный обход всех узлов B-дерева</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Корень B-дерева </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на узел, содержащий ключ, или nullptr, если не найден</dd></dl>
+<p>Выполняет поиск ключа в B-дереве с помощью рекурсивного обхода. Алгоритм:</p><ol type="1">
+<li>Проверяет ключи текущего узла</li>
+<li>Если ключ найден - возвращает узел</li>
+<li>Иначе рекурсивно ищет в дочерних узлах</li>
+</ol>
+<dl class="section note"><dt>Заметки</dt><dd>В B-дереве ключи внутри узла не обязательно отсортированы, поэтому используется линейный поиск по ключам узла. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="tree__properties_8h_source.html">tree_properties.h</a></li>
+<li><a class="el" href="tree__properties_8cpp.html">tree_properties.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_tree_properties.html">TreeProperties</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

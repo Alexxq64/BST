@@ -1,0 +1,28 @@
+var files_dup =
+[
+    [ "data_generator.cpp", "data__generator_8cpp.html", null ],
+    [ "data_generator.h", "data__generator_8h.html", "data__generator_8h" ],
+    [ "db_node.h", "db__node_8h.html", "db__node_8h" ],
+    [ "lab1.cpp", "lab1_8cpp.html", "lab1_8cpp" ],
+    [ "lab1.h", "lab1_8h.html", "lab1_8h" ],
+    [ "lab2.cpp", "lab2_8cpp.html", "lab2_8cpp" ],
+    [ "lab2.h", "lab2_8h.html", "lab2_8h" ],
+    [ "lab3.cpp", "lab3_8cpp.html", "lab3_8cpp" ],
+    [ "lab3.h", "lab3_8h.html", "lab3_8h" ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
+    [ "memory_utils.cpp", "memory__utils_8cpp.html", null ],
+    [ "memory_utils.h", "memory__utils_8h.html", "memory__utils_8h" ],
+    [ "output_utils.cpp", "output__utils_8cpp.html", null ],
+    [ "output_utils.h", "output__utils_8h.html", "output__utils_8h" ],
+    [ "testing.cpp", "testing_8cpp.html", null ],
+    [ "testing.h", "testing_8h.html", "testing_8h" ],
+    [ "tests.cpp", "tests_8cpp.html", "tests_8cpp" ],
+    [ "tests.h", "tests_8h.html", "tests_8h" ],
+    [ "theory_calculations.cpp", "theory__calculations_8cpp.html", null ],
+    [ "theory_calculations.h", "theory__calculations_8h.html", "theory__calculations_8h" ],
+    [ "tree_builders.cpp", "tree__builders_8cpp.html", null ],
+    [ "tree_builders.h", "tree__builders_8h.html", "tree__builders_8h" ],
+    [ "tree_node.h", "tree__node_8h.html", "tree__node_8h" ],
+    [ "tree_properties.cpp", "tree__properties_8cpp.html", null ],
+    [ "tree_properties.h", "tree__properties_8h.html", "tree__properties_8h" ]
+];

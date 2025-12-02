@@ -1,16 +1,15 @@
-﻿#ifndef THEORY_CALCULATIONS_H
-#define THEORY_CALCULATIONS_H
-
-#include <cmath>
-
-/**
+﻿/**
  * @file theory_calculations.h
  * @brief Теоретические оценки характеристик деревьев поиска
  *
  * Этот файл содержит функции для вычисления теоретических оценок
- * высоты и средней высоты для Идеально Сбалансированных Деревьев Поиска (ИСДП)
- * и Случайных Деревьев Поиска (СДП).
+ * высоты и средней высоты для различных типов деревьев поиска.
  */
+
+#ifndef THEORY_CALCULATIONS_H
+#define THEORY_CALCULATIONS_H
+
+#include <cmath>
 
 class TheoryCalculations {
 public:
@@ -52,6 +51,17 @@ public:
     static double theoreticalAverageHeightRandomBST(int n);
 
     /**
+     * @brief Теоретическая оценка высоты B-дерева (ДБД)
+     * @param n Количество ключей в дереве
+     * @param t Минимальная степень B-дерева (t ≥ 2)
+     * @return Теоретическая высота B-дерева
+     *
+     * @note Для t-дерева высота оценивается как ⌈log_m(n)⌉, где m = ceil(t/2)
+     *       Для t=2 получаем 2-3 дерево
+     */
+    static int theoreticalDBHeight(int n, int t);
+
+    /**
      * @brief Вычисление логарифма по основанию 2
      * @param x Аргумент логарифма
      * @return log₂(x)
@@ -64,10 +74,6 @@ public:
      * @return ln(x)
      */
     static double ln(double x);
-
-    static int theoreticalDBHeight(int n, int t);
-
-
 };
 
 #endif // THEORY_CALCULATIONS_H
